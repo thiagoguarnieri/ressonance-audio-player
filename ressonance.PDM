@@ -1,0 +1,1440 @@
+[Root]
+Most Recent Package=Ressonance
+
+
+[Package|instalar|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\Package
+
+[Package|instalar|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|instalar|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|instalar|Files Found]
+
+[Package|instalar|Files Released]
+
+[Package|instalar|Missing Dependency Information]
+C:\WINNT\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+
+[Package|instalar|Out-of-Date Dependency Information]
+C:\WINNT\system32\mscomctl.ocx=
+
+[Package|instalar|Files Added]
+
+[Package|instalar|Files Removed]
+
+[Package|instalar|Files In Project]
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=Yes
+C:\WINNT\system32\MSVBVM60.DLL=Yes
+C:\WINNT\system32\OLEAUT32.DLL=Yes
+C:\WINNT\system32\OLEPRO32.DLL=Yes
+C:\WINNT\system32\ASYCFILT.DLL=Yes
+C:\WINNT\system32\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\mscomctl.ocx=Yes
+C:\WINNT\system32\Comdlg32.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINNT\system32\msjet35.dll=Yes
+C:\WINNT\system32\msjter35.dll=Yes
+C:\WINNT\system32\msjint35.dll=Yes
+C:\WINNT\system32\vbajet32.dll=Yes
+C:\WINNT\system32\expsrv.dll=Yes
+C:\WINNT\system32\msrd2x35.dll=Yes
+C:\WINNT\system32\Msrepl35.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINNT\system32\Vb5db.dll=Yes
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=Yes
+C:\WINNT\system32\msdxm.ocx=Yes
+C:\WINNT\system32\MSCOMCT2.OCX=Yes
+C:\WINNT\system32\MSSTDFMT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|instalar|Configure Registry Files]
+Applicable=No
+
+[Package|instalar|Configure Remote Servers]
+Applicable=No
+
+[Package|instalar|Install Locations]
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=$(ProgramFiles)\ressonance
+C:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINNT\system32\msjet35.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjter35.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjint35.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\Msrepl35.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\Vb5db.dll=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=$(WinSysPath)
+C:\WINNT\system32\msdxm.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|instalar|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=No
+
+[Package|instalar|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|instalar|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|instalar|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|instalar|Package]
+PackageFolder=C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\Package
+ProjectFolder=C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)
+ServerSideCab=
+File1=C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\Package\setup.exe
+File2=C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\Package\Setup.Lst
+File3=C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package
+
+[Package|Standard Setup Package 2|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 2|Files Found]
+
+[Package|Standard Setup Package 2|Files Released]
+
+[Package|Standard Setup Package 2|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\WINDOWS\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+
+[Package|Standard Setup Package 2|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\mscomct2.ocx=
+C:\WINDOWS\system32\comdlg32.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Standard Setup Package 2|Files Added]
+
+[Package|Standard Setup Package 2|Files Removed]
+c:\arquivos de programas\arquivos comuns\microsoft shared\dao\dao350.dll=
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\windows\system32\msjet35.dll=
+c:\windows\system32\msjint35.dll=
+c:\windows\system32\msjter35.dll=
+c:\windows\system32\vbajet32.dll=
+
+[Package|Standard Setup Package 2|Files In Project]
+C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\comdlg32.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=No
+C:\WINDOWS\system32\MSJET35.DLL=No
+C:\WINDOWS\system32\MSJTER35.DLL=No
+C:\WINDOWS\system32\MSJINT35.DLL=No
+C:\WINDOWS\system32\vbajet32.dll=No
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\MSRD2X35.DLL=Yes
+C:\WINDOWS\system32\MSREPL35.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=No
+C:\WINDOWS\system32\msdxm.ocx=Yes
+C:\WINDOWS\system32\mscomct2.ocx=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 2|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 2|Install Locations]
+C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\ressonance.exe=$(ProgramFiles)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msdxm.ocx=$(WinSysPath)
+C:\WINDOWS\system32\mscomct2.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 2|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\ressonance.exe=No
+
+[Package|Standard Setup Package 2|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 2|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 2|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 2|Package]
+PackageFolder=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package
+ProjectFolder=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta
+ServerSideCab=
+File1=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package\setup.exe
+File2=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package\Setup.Lst
+File3=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 3|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package
+
+[Package|Standard Setup Package 3|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 3|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 3|Files Found]
+
+[Package|Standard Setup Package 3|Files Released]
+
+[Package|Standard Setup Package 3|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\WINDOWS\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+
+[Package|Standard Setup Package 3|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\mscomct2.ocx=
+C:\WINDOWS\system32\comdlg32.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Standard Setup Package 3|Files Added]
+
+[Package|Standard Setup Package 3|Files Removed]
+c:\windows\system32\expsrv.dll=
+c:\windows\system32\msjint35.dll=
+c:\windows\system32\msjet35.dll=
+c:\windows\system32\msjter35.dll=
+c:\windows\system32\msrd2x35.dll=
+c:\windows\system32\msrepl35.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\windows\system32\vb5db.dll=
+c:\windows\system32\vbajet32.dll=
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\arquivos de programas\arquivos comuns\microsoft shared\dao\dao350.dll=
+
+[Package|Standard Setup Package 3|Files In Project]
+C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\comdlg32.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=No
+C:\WINDOWS\system32\MSJET35.DLL=No
+C:\WINDOWS\system32\MSJTER35.DLL=No
+C:\WINDOWS\system32\MSJINT35.DLL=No
+C:\WINDOWS\system32\vbajet32.dll=No
+C:\WINDOWS\system32\expsrv.dll=No
+C:\WINDOWS\system32\MSRD2X35.DLL=No
+C:\WINDOWS\system32\MSREPL35.DLL=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=No
+C:\WINDOWS\system32\VB5DB.DLL=No
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=No
+C:\WINDOWS\system32\msdxm.ocx=Yes
+C:\WINDOWS\system32\mscomct2.ocx=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 3|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 3|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 3|Install Locations]
+C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msdxm.ocx=$(WinSysPath)
+C:\WINDOWS\system32\mscomct2.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 3|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\ressonance.exe=No
+
+[Package|Standard Setup Package 3|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 3|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 3|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 3|Package]
+PackageFolder=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package
+ProjectFolder=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta
+ServerSideCab=
+File1=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package\setup.exe
+File2=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package\Setup.Lst
+File3=C:\Documents and Settings\programação\Meus documentos\projeto da radio\beta\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 4|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\administrador\Meus documentos\programa pronto\package
+
+[Package|Standard Setup Package 4|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 4|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 4|Files Found]
+
+[Package|Standard Setup Package 4|Files Released]
+
+[Package|Standard Setup Package 4|Missing Dependency Information]
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+C:\WINNT\system32\msdxm.ocx=
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\WINDOWS\system32\msdxm.ocx=
+
+[Package|Standard Setup Package 4|Out-of-Date Dependency Information]
+C:\WINNT\system32\mscomctl.ocx=
+C:\WINNT\system32\MSSTDFMT.DLL=
+C:\WINNT\system32\MSCOMCT2.OCX=
+C:\WINNT\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\MSCOMCT2.OCX=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\mscomctl.ocx=
+
+[Package|Standard Setup Package 4|Files Added]
+
+[Package|Standard Setup Package 4|Files Removed]
+c:\arquivos de programas\arquivos comuns\microsoft shared\dao\dao350.dll=
+c:\winnt\system32\expsrv.dll=
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\winnt\system32\msjet35.dll=
+c:\winnt\system32\msjint35.dll=
+c:\winnt\system32\msjter35.dll=
+c:\winnt\system32\msrd2x35.dll=
+c:\winnt\system32\msrepl35.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\winnt\system32\vb5db.dll=
+c:\winnt\system32\vbajet32.dll=
+c:\windows\system32\expsrv.dll=
+c:\windows\system32\msjet35.dll=
+c:\windows\system32\msjint35.dll=
+c:\windows\system32\msjter35.dll=
+c:\windows\system32\msrd2x35.dll=
+c:\windows\system32\msrepl35.dll=
+c:\windows\system32\msstdfmt.dll=
+c:\windows\system32\vb5db.dll=
+c:\windows\system32\vbajet32.dll=
+
+[Package|Standard Setup Package 4|Files In Project]
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=No
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\programação\Meus documentos\programa pronto\ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\WINDOWS\system32\mscomctl.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\WINDOWS\system32\MSJET35.DLL=No
+C:\WINDOWS\system32\MSJTER35.DLL=No
+C:\WINDOWS\system32\MSJINT35.DLL=No
+C:\WINDOWS\system32\vbajet32.dll=No
+C:\WINDOWS\system32\expsrv.dll=No
+C:\WINDOWS\system32\MSRD2X35.DLL=No
+C:\WINDOWS\system32\MSREPL35.DLL=No
+C:\WINDOWS\system32\VB5DB.DLL=No
+C:\WINDOWS\system32\msdxm.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=No
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+
+[Package|Standard Setup Package 4|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 4|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 4|Install Locations]
+C:\Documents and Settings\administrador\Meus documentos\beta(com multiple selec)\ressonance.exe=$(AppPath)
+C:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\msdxm.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\administrador\Meus documentos\Cópia de beta(com multiple selec)\ressonance.exe=$(AppPath)
+C:\Documents and Settings\programação\Meus documentos\programa pronto\ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msdxm.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+
+[Package|Standard Setup Package 4|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\administrador\Meus documentos\beta(com multiple selec)\ressonance.exe=No
+C:\Documents and Settings\administrador\Meus documentos\Cópia de beta(com multiple selec)\ressonance.exe=No
+C:\Documents and Settings\programação\Meus documentos\programa pronto\ressonance.exe=No
+
+[Package|Standard Setup Package 4|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 4|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 4|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 4|Package]
+PackageFolder=C:\Documents and Settings\administrador\Meus documentos\programa pronto\package
+ProjectFolder=C:\Documents and Settings\programação\Meus documentos\programa pronto
+ServerSideCab=
+File1=C:\Documents and Settings\administrador\Meus documentos\programa pronto\package\setup.exe
+File2=C:\Documents and Settings\administrador\Meus documentos\programa pronto\package\Setup.Lst
+File3=C:\Documents and Settings\administrador\Meus documentos\programa pronto\package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 5|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\Package
+
+[Package|Standard Setup Package 5|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 5|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 5|Files Found]
+
+[Package|Standard Setup Package 5|Files Released]
+
+[Package|Standard Setup Package 5|Missing Dependency Information]
+C:\AMP3DJ\amp3dj.ocx=
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\WINDOWS\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+
+[Package|Standard Setup Package 5|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCT2.OCX=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\mscomctl.ocx=
+
+[Package|Standard Setup Package 5|Files Added]
+
+[Package|Standard Setup Package 5|Files Removed]
+c:\arquivos de programas\arquivos comuns\microsoft shared\dao\dao350.dll=
+c:\windows\system32\expsrv.dll=
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\windows\system32\msjet35.dll=
+c:\windows\system32\msjint35.dll=
+c:\windows\system32\msjter35.dll=
+c:\windows\system32\msrd2x35.dll=
+c:\windows\system32\msrepl35.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\windows\system32\vb5db.dll=
+c:\windows\system32\vbajet32.dll=
+
+[Package|Standard Setup Package 5|Files In Project]
+C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\mscomctl.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=No
+C:\WINDOWS\system32\MSJET35.DLL=No
+C:\WINDOWS\system32\MSJTER35.DLL=No
+C:\WINDOWS\system32\MSJINT35.DLL=No
+C:\WINDOWS\system32\vbajet32.dll=No
+C:\WINDOWS\system32\expsrv.dll=No
+C:\WINDOWS\system32\MSRD2X35.DLL=No
+C:\WINDOWS\system32\MSREPL35.DLL=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=No
+C:\WINDOWS\system32\VB5DB.DLL=No
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=No
+C:\WINDOWS\system32\msdxm.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\AMP3DJ\amp3dj.ocx=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 5|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 5|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 5|Install Locations]
+C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msdxm.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\AMP3DJ\amp3dj.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 5|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\ressonance.exe=No
+
+[Package|Standard Setup Package 5|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 5|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 5|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 5|Package]
+PackageFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\Package
+ProjectFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto
+ServerSideCab=
+File1=C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\Package\setup.exe
+File2=C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\Package\Setup.Lst
+File3=C:\Documents and Settings\programação\Meus documentos\projetos vb\programa pronto\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 6|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package
+
+[Package|Standard Setup Package 6|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 6|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 6|Files Found]
+
+[Package|Standard Setup Package 6|Files Released]
+
+[Package|Standard Setup Package 6|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\WINDOWS\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+
+[Package|Standard Setup Package 6|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCT2.OCX=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\mscomctl.ocx=
+
+[Package|Standard Setup Package 6|Files Added]
+
+[Package|Standard Setup Package 6|Files Removed]
+c:\arquivos de programas\arquivos comuns\microsoft shared\dao\dao350.dll=
+c:\windows\system32\expsrv.dll=
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\windows\system32\msjet35.dll=
+c:\windows\system32\msjint35.dll=
+c:\windows\system32\msjter35.dll=
+c:\windows\system32\msrd2x35.dll=
+c:\windows\system32\msrepl35.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\windows\system32\vb5db.dll=
+c:\windows\system32\vbajet32.dll=
+
+[Package|Standard Setup Package 6|Files In Project]
+C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\mscomctl.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=No
+C:\WINDOWS\system32\MSJET35.DLL=No
+C:\WINDOWS\system32\MSJTER35.DLL=No
+C:\WINDOWS\system32\MSJINT35.DLL=No
+C:\WINDOWS\system32\vbajet32.dll=No
+C:\WINDOWS\system32\expsrv.dll=No
+C:\WINDOWS\system32\MSRD2X35.DLL=No
+C:\WINDOWS\system32\MSREPL35.DLL=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=No
+C:\WINDOWS\system32\VB5DB.DLL=No
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=No
+C:\WINDOWS\system32\msdxm.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 6|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 6|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 6|Install Locations]
+C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msdxm.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 6|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\ressonance.exe=No
+
+[Package|Standard Setup Package 6|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 6|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 6|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 6|Package]
+PackageFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package
+ProjectFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais
+ServerSideCab=
+File1=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package\setup.exe
+File2=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package\Setup.Lst
+File3=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 7|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package
+
+[Package|Standard Setup Package 7|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 7|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 7|Files Found]
+
+[Package|Standard Setup Package 7|Files Released]
+
+[Package|Standard Setup Package 7|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\WINDOWS\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+
+[Package|Standard Setup Package 7|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCT2.OCX=
+C:\WINDOWS\system32\Comdlg32.ocx=
+C:\WINDOWS\system32\mscomctl.ocx=
+
+[Package|Standard Setup Package 7|Files Added]
+
+[Package|Standard Setup Package 7|Files Removed]
+c:\arquivos de programas\arquivos comuns\microsoft shared\dao\dao350.dll=
+c:\windows\system32\expsrv.dll=
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\windows\system32\msjint35.dll=
+c:\windows\system32\msjet35.dll=
+c:\windows\system32\msjter35.dll=
+c:\windows\system32\msrd2x35.dll=
+c:\windows\system32\msrepl35.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\windows\system32\vbajet32.dll=
+c:\windows\system32\vb5db.dll=
+
+[Package|Standard Setup Package 7|Files In Project]
+C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\mscomctl.ocx=Yes
+C:\WINDOWS\system32\Comdlg32.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=No
+C:\WINDOWS\system32\MSJET35.DLL=No
+C:\WINDOWS\system32\MSJTER35.DLL=No
+C:\WINDOWS\system32\MSJINT35.DLL=No
+C:\WINDOWS\system32\vbajet32.dll=No
+C:\WINDOWS\system32\expsrv.dll=No
+C:\WINDOWS\system32\MSRD2X35.DLL=No
+C:\WINDOWS\system32\MSREPL35.DLL=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=No
+C:\WINDOWS\system32\VB5DB.DLL=No
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=No
+C:\WINDOWS\system32\msdxm.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 7|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 7|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 7|Install Locations]
+C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msdxm.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 7|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\ressonance.exe=No
+
+[Package|Standard Setup Package 7|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 7|IconGroups]
+Group0=ressonance
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 7|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 7|Package]
+PackageFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package
+ProjectFolder=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais
+ServerSideCab=
+File1=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package\setup.exe
+File2=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package\Setup.Lst
+File3=C:\Documents and Settings\programação\Meus documentos\projetos vb\prog. pronto com novo sist de comerciais\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Ressonance-correto|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\Package
+
+[Package|Ressonance-correto|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Ressonance-correto|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Ressonance-correto|Files Found]
+
+[Package|Ressonance-correto|Files Released]
+
+[Package|Ressonance-correto|Missing Dependency Information]
+
+[Package|Ressonance-correto|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Ressonance-correto|Files Added]
+C:\WINDOWS\system32\zlib.dll=
+C:\WINDOWS\system32\Vbhlp32.dll=
+C:\Documents and Settings\user\Desktop\fontes\LCD-U___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD-N___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDMU___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDMN___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDML___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDMB___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDM2U__.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDM2N__.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDM2L__.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCDM2B__.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD-L___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD-BOLD.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD2U___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD2N___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD2L___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\LCD2B___.TTF=
+C:\Documents and Settings\user\Desktop\fontes\Rippen.ttf=
+C:\Documents and Settings\user\Desktop\fontes\Rippen Bold.ttf=
+
+[Package|Ressonance-correto|Files Removed]
+
+[Package|Ressonance-correto|Files In Project]
+C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\ressonance.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\DAO350.DLL=Yes
+C:\WINDOWS\system32\MSJET35.DLL=Yes
+C:\WINDOWS\system32\MSJTER35.DLL=Yes
+C:\WINDOWS\system32\MSJINT35.DLL=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\MSRD2X35.DLL=Yes
+C:\WINDOWS\system32\MSREPL35.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\shazammp3.dll=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\system32\zlib.dll=Yes
+C:\WINDOWS\system32\Vbhlp32.dll=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD-U___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD-N___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDMU___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDMN___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDML___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDMB___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDM2U__.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDM2N__.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDM2L__.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCDM2B__.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD-L___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD-BOLD.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD2U___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD2N___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD2L___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\LCD2B___.TTF=Yes
+C:\Documents and Settings\user\Desktop\fontes\Rippen.ttf=Yes
+C:\Documents and Settings\user\Desktop\fontes\Rippen Bold.ttf=Yes
+
+[Package|Ressonance-correto|Configure Registry Files]
+Applicable=No
+
+[Package|Ressonance-correto|Configure Remote Servers]
+Applicable=No
+
+[Package|Ressonance-correto|Install Locations]
+C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\shazammp3.dll=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\system32\zlib.dll=$(WinSysPath)
+C:\WINDOWS\system32\Vbhlp32.dll=$(WinSysPath)
+C:\Documents and Settings\user\Desktop\fontes\LCD-U___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD-N___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDMU___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDMN___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDML___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDMB___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDM2U__.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDM2N__.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDM2L__.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCDM2B__.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD-L___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD-BOLD.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD2U___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD2N___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD2L___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\LCD2B___.TTF=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\Rippen.ttf=$(Font)
+C:\Documents and Settings\user\Desktop\fontes\Rippen Bold.ttf=$(Font)
+
+[Package|Ressonance-correto|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\ressonance.exe=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Ressonance-correto|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Ressonance-correto|IconGroups]
+Group0=ressonance
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Ressonance-correto|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Ressonance-correto|Package]
+PackageFolder=C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\Package
+ProjectFolder=C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core
+ServerSideCab=
+File1=C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\Package\setup.exe
+File2=C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\Package\Setup.Lst
+File3=C:\Documents and Settings\user\Meus documentos\RESSONANCE PROJECT\Ressonance 1.2 mci-shazam- new core\Package\ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\webserver\Desktop\instalador
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINNT\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\mscomctl.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\winnt\system32\msjet35.dll=
+c:\winnt\system32\vbajet32.dll=
+c:\winnt\system32\msjint35.dll=
+c:\winnt\system32\msjter35.dll=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\ressonance\Ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=Yes
+C:\WINDOWS\system32\MSJET35.DLL=Yes
+C:\WINDOWS\system32\MSJTER35.DLL=Yes
+C:\WINDOWS\system32\MSJINT35.DLL=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\MSRD2X35.DLL=Yes
+C:\WINDOWS\system32\MSREPL35.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=$(AppPath)
+C:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\Msrepl35.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\Vb5db.dll=$(WinSysPath)
+C:\WINNT\system32\msdxm.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(ProgramFiles)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\ressonance\Ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=No
+C:\WINNT\system32\MSSTDFMT.DLL=Yes
+C:\ressonance\Ressonance.exe=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=ressonance
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=ressonance
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\Documents and Settings\webserver\Desktop\instalador
+ProjectFolder=C:\Documents and Settings\webserver\Desktop\Ressonance bass
+ServerSideCab=
+File1=C:\Documents and Settings\webserver\Desktop\instalador\setup.exe
+File2=C:\Documents and Settings\webserver\Desktop\instalador\Setup.Lst
+File3=C:\Documents and Settings\webserver\Desktop\instalador\Ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Ressonance|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\webserver\Desktop\instalador
+
+[Package|Ressonance|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=Yes
+
+[Package|Ressonance|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Ressonance|Files Found]
+
+[Package|Ressonance|Files Released]
+
+[Package|Ressonance|Missing Dependency Information]
+C:\WINNT\system32\msdxm.ocx=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado20.tlb=
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=
+
+[Package|Ressonance|Out-of-Date Dependency Information]
+C:\WINNT\system32\mscomctl.ocx=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Ressonance|Files Added]
+c:\documents and settings\webserver\desktop\ressonance bass\comercial.lsc=
+c:\documents and settings\webserver\desktop\ressonance bass\aviso.txt=
+c:\documents and settings\webserver\desktop\ressonance bass\configressonance.txt=
+c:\documents and settings\webserver\desktop\ressonance bass\espelho.txt=
+c:\documents and settings\webserver\desktop\ressonance bass\rotativas.txt=
+C:\ressonance\devices.txt=
+
+[Package|Ressonance|Files Removed]
+c:\arquivos de programas\arquivos comuns\system\ado\msado20.tlb=
+c:\winnt\system32\msjet35.dll=
+c:\winnt\system32\vbajet32.dll=
+c:\winnt\system32\msjint35.dll=
+c:\winnt\system32\msjter35.dll=
+
+[Package|Ressonance|Files In Project]
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\ressonance\Ressonance.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=Yes
+C:\WINDOWS\system32\MSJET35.DLL=Yes
+C:\WINDOWS\system32\MSJTER35.DLL=Yes
+C:\WINDOWS\system32\MSJINT35.DLL=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\MSRD2X35.DLL=Yes
+C:\WINDOWS\system32\MSREPL35.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=Yes
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=Yes
+C:\WINDOWS\system32\MSRDO20.DLL=Yes
+C:\WINDOWS\system32\RDOCURS.DLL=Yes
+C:\ressonance\devices.txt=Yes
+
+[Package|Ressonance|Configure Registry Files]
+Applicable=No
+
+[Package|Ressonance|Configure Remote Servers]
+Applicable=No
+
+[Package|Ressonance|Install Locations]
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=$(AppPath)
+C:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\Comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\Msrepl35.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\Vb5db.dll=$(WinSysPath)
+C:\WINNT\system32\msdxm.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(ProgramFiles)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\ressonance\Ressonance.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=$(AppPath)
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=$(AppPath)
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=$(AppPath)
+C:\WINDOWS\system32\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDOCURS.DLL=$(WinSysPath)
+C:\ressonance\devices.txt=$(AppPath)
+
+[Package|Ressonance|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\iedg56\Meus documentos\projeto da radio\alpha2(comerciais prot)\ressonance.exe=No
+C:\WINNT\system32\MSSTDFMT.DLL=Yes
+C:\ressonance\Ressonance.exe=No
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\comercial.lsc=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\aviso.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\configressonance.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\espelho.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\rotativas.txt=No
+C:\Documents and Settings\webserver\Desktop\Ressonance bass\bass.dll=No
+C:\ressonance\devices.txt=No
+
+[Package|Ressonance|Distribution]
+Type=single
+Size=
+Title=Ressonance
+
+[Package|Ressonance|Package]
+PackageFolder=C:\Documents and Settings\webserver\Desktop\instalador
+ProjectFolder=C:\Documents and Settings\webserver\Desktop\Ressonance bass
+ServerSideCab=
+File1=C:\Documents and Settings\webserver\Desktop\instalador\setup.exe
+File2=C:\Documents and Settings\webserver\Desktop\instalador\Setup.Lst
+File3=C:\Documents and Settings\webserver\Desktop\instalador\Ressonance.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Ressonance|IconGroups]
+Group0=ressonance
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Ressonance|ressonance]
+Icon1=ressonance.exe
+Title1=ressonance
+StartIn1=$(AppPath)
+Key1=Icon1

@@ -1,0 +1,72 @@
+VERSION 5.00
+Begin VB.Form Form5 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Buscar Música"
+   ClientHeight    =   1515
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   6180
+   Icon            =   "Form5.frx":0000
+   LinkTopic       =   "Form5"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   Picture         =   "Form5.frx":0CCA
+   ScaleHeight     =   1515
+   ScaleWidth      =   6180
+   StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton setarpath 
+      BackColor       =   &H00D59C73&
+      Caption         =   "Buscar"
+      Height          =   375
+      Left            =   4680
+      TabIndex        =   1
+      Top             =   360
+      Width           =   1335
+   End
+   Begin VB.TextBox cancao 
+      BackColor       =   &H00808080&
+      ForeColor       =   &H80000005&
+      Height          =   375
+      Left            =   120
+      TabIndex        =   0
+      Top             =   360
+      Width           =   4455
+   End
+   Begin VB.Label observação 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Obs: Você deve se posicionar na pasta onde está a música antes de procurá-la"
+      ForeColor       =   &H80000008&
+      Height          =   255
+      Left            =   240
+      TabIndex        =   3
+      Top             =   1080
+      Width           =   5655
+   End
+   Begin VB.Label nomemusica 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Digite o nome da música"
+      ForeColor       =   &H80000008&
+      Height          =   255
+      Left            =   120
+      TabIndex        =   2
+      Top             =   120
+      Width           =   1815
+   End
+End
+Attribute VB_Name = "Form5"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub setarpath_Click()
+Dim cont, cont2
+For cont = 0 To Form1.Dir1.ListCount
+    For cont2 = 0 To Form1.File1.ListCount
+        If InStr(Form1.File1.List(cont2), cancao.text) <> 0 Then
+            Form1.File1.Selected(cont2) = True
+            Exit Sub
+        End If
+    Next cont2
+Next cont
+End Sub
+

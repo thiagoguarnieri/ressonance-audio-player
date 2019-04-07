@@ -1,0 +1,4757 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Begin VB.Form Form1 
+   AutoRedraw      =   -1  'True
+   BackColor       =   &H8000000A&
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Ressonance MCI-BASS - DEZEMBRO"
+   ClientHeight    =   10815
+   ClientLeft      =   240
+   ClientTop       =   975
+   ClientWidth     =   15270
+   FillColor       =   &H80000006&
+   ForeColor       =   &H00000000&
+   Icon            =   "Form1.frx":0000
+   LinkTopic       =   "Form1"
+   Picture         =   "Form1.frx":0CCA
+   ScaleHeight     =   10815
+   ScaleWidth      =   15270
+   StartUpPosition =   2  'CenterScreen
+   Begin VB.CommandButton cmdFade2 
+      Caption         =   "Fade out"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   225
+      Left            =   10800
+      Style           =   1  'Graphical
+      TabIndex        =   130
+      ToolTipText     =   "Pára a música em volume decrescente"
+      Top             =   1155
+      Width           =   765
+   End
+   Begin VB.CommandButton cmdFade1 
+      Caption         =   "Fade out"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   225
+      Left            =   3600
+      MaskColor       =   &H80000000&
+      Style           =   1  'Graphical
+      TabIndex        =   129
+      ToolTipText     =   "Pára a música em volume decrescente"
+      Top             =   1170
+      Width           =   765
+   End
+   Begin VB.CommandButton fw2 
+      Height          =   465
+      Left            =   14535
+      Picture         =   "Form1.frx":6AAFA
+      Style           =   1  'Graphical
+      TabIndex        =   128
+      Top             =   225
+      Width           =   555
+   End
+   Begin VB.CommandButton bw2 
+      Height          =   465
+      Left            =   13950
+      Picture         =   "Form1.frx":6D355
+      Style           =   1  'Graphical
+      TabIndex        =   127
+      Top             =   225
+      Width           =   510
+   End
+   Begin VB.CommandButton stop2 
+      Height          =   465
+      Left            =   13410
+      Picture         =   "Form1.frx":6FB9B
+      Style           =   1  'Graphical
+      TabIndex        =   126
+      Top             =   225
+      Width           =   465
+   End
+   Begin VB.CommandButton pause2 
+      Height          =   465
+      Left            =   12825
+      Picture         =   "Form1.frx":722F0
+      Style           =   1  'Graphical
+      TabIndex        =   125
+      Top             =   225
+      Width           =   510
+   End
+   Begin VB.CommandButton play2 
+      Height          =   465
+      Left            =   12240
+      Picture         =   "Form1.frx":74A89
+      Style           =   1  'Graphical
+      TabIndex        =   124
+      Top             =   225
+      Width           =   510
+   End
+   Begin VB.CommandButton fw1 
+      Height          =   465
+      Left            =   2565
+      Picture         =   "Form1.frx":772CD
+      Style           =   1  'Graphical
+      TabIndex        =   123
+      Top             =   225
+      Width           =   555
+   End
+   Begin VB.CommandButton bw1 
+      Height          =   465
+      Left            =   1980
+      Picture         =   "Form1.frx":79B28
+      Style           =   1  'Graphical
+      TabIndex        =   122
+      Top             =   225
+      Width           =   510
+   End
+   Begin VB.CommandButton stop1 
+      Height          =   465
+      Left            =   1395
+      Picture         =   "Form1.frx":7C36E
+      Style           =   1  'Graphical
+      TabIndex        =   121
+      Top             =   225
+      Width           =   510
+   End
+   Begin VB.CommandButton pause1 
+      Height          =   465
+      Left            =   765
+      Picture         =   "Form1.frx":7EAC3
+      Style           =   1  'Graphical
+      TabIndex        =   120
+      Top             =   225
+      Width           =   555
+   End
+   Begin VB.CommandButton play1 
+      Height          =   465
+      Left            =   180
+      Picture         =   "Form1.frx":8125C
+      Style           =   1  'Graphical
+      TabIndex        =   119
+      Top             =   225
+      Width           =   510
+   End
+   Begin VB.CommandButton avisovisto 
+      Caption         =   "OK"
+      Height          =   510
+      Left            =   3750
+      Style           =   1  'Graphical
+      TabIndex        =   118
+      Top             =   3300
+      Width           =   465
+   End
+   Begin VB.CommandButton cmdToPlaylist 
+      BackColor       =   &H0080FF80&
+      Caption         =   "Playlist"
+      Enabled         =   0   'False
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   14475
+      Style           =   1  'Graphical
+      TabIndex        =   114
+      Top             =   3450
+      Width           =   690
+   End
+   Begin VB.CommandButton cmdCart2busca 
+      BackColor       =   &H00FF8080&
+      Caption         =   "Cart. 2"
+      Enabled         =   0   'False
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   14475
+      Style           =   1  'Graphical
+      TabIndex        =   113
+      Top             =   3000
+      Width           =   690
+   End
+   Begin VB.CommandButton cmdCart1busca 
+      BackColor       =   &H00FF8080&
+      Caption         =   " Cart. 1"
+      Enabled         =   0   'False
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   14475
+      Style           =   1  'Graphical
+      TabIndex        =   112
+      Top             =   2550
+      Width           =   705
+   End
+   Begin VB.TextBox txtBusca 
+      Height          =   330
+      Left            =   4275
+      TabIndex        =   111
+      Top             =   2550
+      Width           =   2850
+   End
+   Begin VB.CommandButton cmdBusca 
+      Caption         =   "Buscar"
+      Enabled         =   0   'False
+      Height          =   330
+      Left            =   7200
+      TabIndex        =   110
+      Top             =   2550
+      Width           =   735
+   End
+   Begin VB.CommandButton cmdPastaBase 
+      Height          =   315
+      Left            =   7500
+      Picture         =   "Form1.frx":83AA0
+      Style           =   1  'Graphical
+      TabIndex        =   109
+      Top             =   3300
+      Width           =   435
+   End
+   Begin VB.Timer TimerFade1 
+      Enabled         =   0   'False
+      Interval        =   250
+      Left            =   2430
+      Top             =   3420
+   End
+   Begin VB.Timer TimerFade2 
+      Enabled         =   0   'False
+      Interval        =   250
+      Left            =   3285
+      Top             =   3420
+   End
+   Begin MSComctlLib.ImageList listaImagens1 
+      Left            =   7875
+      Top             =   3420
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   16
+      ImageHeight     =   16
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   2
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Form1.frx":83B62
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Form1.frx":83EFC
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   35
+      Left            =   13275
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   96
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   34
+      Left            =   12105
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   95
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1185
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   33
+      Left            =   10890
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   94
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   32
+      Left            =   9675
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   93
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   31
+      Left            =   8505
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   92
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1185
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   30
+      Left            =   7290
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   91
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   29
+      Left            =   6075
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   90
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   28
+      Left            =   4905
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   89
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1185
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   27
+      Left            =   3690
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   88
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   26
+      Left            =   2475
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   87
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   25
+      Left            =   1305
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   86
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1185
+   End
+   Begin VB.CommandButton vinheta1 
+      BackColor       =   &H00C0FFC0&
+      Caption         =   "vazio"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   690
+      Index           =   24
+      Left            =   90
+      MaskColor       =   &H00808080&
+      Style           =   1  'Graphical
+      TabIndex        =   85
+      ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+      Top             =   1530
+      Width           =   1230
+   End
+   Begin VB.Timer timerAutocross 
+      Enabled         =   0   'False
+      Interval        =   200
+      Left            =   2025
+      Top             =   3420
+   End
+   Begin VB.Timer TimerProgressao 
+      Interval        =   1000
+      Left            =   1125
+      Top             =   3435
+   End
+   Begin VB.Timer TimerEventos 
+      Interval        =   1000
+      Left            =   630
+      Top             =   3420
+   End
+   Begin VB.Timer tmrSpectrum 
+      Enabled         =   0   'False
+      Interval        =   50
+      Left            =   195
+      Top             =   3420
+   End
+   Begin VB.PictureBox vuMeter 
+      BackColor       =   &H00000000&
+      Height          =   945
+      Left            =   4950
+      ScaleHeight     =   885
+      ScaleWidth      =   4965
+      TabIndex        =   59
+      Top             =   75
+      Width           =   5025
+   End
+   Begin VB.CommandButton cmdLimparSup 
+      Caption         =   "Limpar"
+      Height          =   330
+      Left            =   14535
+      TabIndex        =   56
+      ToolTipText     =   "Retorna todos os slots azuis a condição de vazios"
+      Top             =   2160
+      Width           =   645
+   End
+   Begin VB.CommandButton cmdSvVinSup 
+      Caption         =   "Salvar"
+      Height          =   285
+      Left            =   14535
+      TabIndex        =   55
+      ToolTipText     =   "Salva arquivo com as vinhetas programadas"
+      Top             =   1845
+      Width           =   645
+   End
+   Begin VB.CommandButton cmdAbrirVinSup 
+      Caption         =   "Abrir"
+      Height          =   285
+      Left            =   14535
+      TabIndex        =   54
+      ToolTipText     =   "Abre arquivo com as vinhetas programadas"
+      Top             =   1530
+      Width           =   645
+   End
+   Begin MSComDlg.CommonDialog dialogo1 
+      Left            =   8415
+      Top             =   3600
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
+   End
+   Begin VB.CommandButton uplist 
+      Height          =   855
+      Left            =   14565
+      Picture         =   "Form1.frx":84296
+      Style           =   1  'Graphical
+      TabIndex        =   2
+      ToolTipText     =   "mover prara cima"
+      Top             =   5940
+      Width           =   675
+   End
+   Begin MSComctlLib.StatusBar StatusBar 
+      Align           =   2  'Align Bottom
+      Height          =   255
+      Left            =   0
+      TabIndex        =   1
+      Top             =   10560
+      Width           =   15270
+      _ExtentX        =   26935
+      _ExtentY        =   450
+      Style           =   1
+      _Version        =   393216
+      BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
+         NumPanels       =   1
+         BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+         EndProperty
+      EndProperty
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+   End
+   Begin VB.CommandButton downlist 
+      Height          =   855
+      Left            =   14565
+      Picture         =   "Form1.frx":86EF5
+      Style           =   1  'Graphical
+      TabIndex        =   0
+      ToolTipText     =   "mover para baixo"
+      Top             =   6840
+      Width           =   675
+   End
+   Begin TabDlg.SSTab SSTab2 
+      Height          =   4920
+      Left            =   7830
+      TabIndex        =   3
+      ToolTipText     =   "Gerencia Blocos, mostra eventos e gerencia cartucheiras."
+      Top             =   4500
+      Width           =   6720
+      _ExtentX        =   11853
+      _ExtentY        =   8678
+      _Version        =   393216
+      Style           =   1
+      TabHeight       =   520
+      BackColor       =   -2147483644
+      ForeColor       =   -2147483640
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      TabCaption(0)   =   "  Playlist"
+      TabPicture(0)   =   "Form1.frx":89C34
+      Tab(0).ControlEnabled=   -1  'True
+      Tab(0).Control(0)=   "LabelCalcBloco"
+      Tab(0).Control(0).Enabled=   0   'False
+      Tab(0).Control(1)=   "playlistView"
+      Tab(0).Control(1).Enabled=   0   'False
+      Tab(0).Control(2)=   "cmdPausa"
+      Tab(0).Control(2).Enabled=   0   'False
+      Tab(0).Control(3)=   "autocross"
+      Tab(0).Control(3).Enabled=   0   'False
+      Tab(0).Control(4)=   "autoload"
+      Tab(0).Control(4).Enabled=   0   'False
+      Tab(0).Control(5)=   "armar2"
+      Tab(0).Control(5).Enabled=   0   'False
+      Tab(0).Control(6)=   "deletaruma"
+      Tab(0).Control(6).Enabled=   0   'False
+      Tab(0).Control(7)=   "player2"
+      Tab(0).Control(7).Enabled=   0   'False
+      Tab(0).Control(8)=   "player1"
+      Tab(0).Control(8).Enabled=   0   'False
+      Tab(0).Control(9)=   "salvarlista"
+      Tab(0).Control(9).Enabled=   0   'False
+      Tab(0).Control(10)=   "apagarlista"
+      Tab(0).Control(10).Enabled=   0   'False
+      Tab(0).Control(11)=   "abrirlista"
+      Tab(0).Control(11).Enabled=   0   'False
+      Tab(0).ControlCount=   12
+      TabCaption(1)   =   "  Eventos Executados"
+      TabPicture(1)   =   "Form1.frx":89C50
+      Tab(1).ControlEnabled=   0   'False
+      Tab(1).Control(0)=   "tocadaslist"
+      Tab(1).ControlCount=   1
+      TabCaption(2)   =   "  Cartucheiras Abertas"
+      TabPicture(2)   =   "Form1.frx":89C6C
+      Tab(2).ControlEnabled=   0   'False
+      Tab(2).Control(0)=   "lstStreamAberto"
+      Tab(2).ControlCount=   1
+      Begin VB.ListBox tocadaslist 
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   4155
+         Left            =   -74955
+         TabIndex        =   52
+         Top             =   450
+         Width           =   6585
+      End
+      Begin VB.CommandButton abrirlista 
+         BackColor       =   &H00FFC0C0&
+         Caption         =   "open"
+         Height          =   375
+         Left            =   2700
+         Style           =   1  'Graphical
+         TabIndex        =   49
+         ToolTipText     =   "abrir programação (playlist)"
+         Top             =   465
+         Width           =   555
+      End
+      Begin VB.CommandButton apagarlista 
+         BackColor       =   &H000000FF&
+         Caption         =   "dell all"
+         Height          =   375
+         Left            =   3870
+         Style           =   1  'Graphical
+         TabIndex        =   48
+         ToolTipText     =   "deletar todos os áudios da playlist"
+         Top             =   465
+         Width           =   555
+      End
+      Begin VB.CommandButton salvarlista 
+         BackColor       =   &H00FFC0C0&
+         Caption         =   "save"
+         Height          =   375
+         Left            =   3285
+         Style           =   1  'Graphical
+         TabIndex        =   47
+         ToolTipText     =   "salvar programação (playlist)"
+         Top             =   465
+         Width           =   555
+      End
+      Begin VB.CommandButton player1 
+         BackColor       =   &H0000FF00&
+         Caption         =   "1"
+         Height          =   375
+         Left            =   1530
+         Style           =   1  'Graphical
+         TabIndex        =   46
+         ToolTipText     =   "carregar na cartucheira 1"
+         Top             =   465
+         Width           =   555
+      End
+      Begin VB.CommandButton player2 
+         BackColor       =   &H0000FF00&
+         Caption         =   "2"
+         Height          =   375
+         Left            =   2115
+         Style           =   1  'Graphical
+         TabIndex        =   45
+         ToolTipText     =   "carregar no cartucheira 2"
+         Top             =   465
+         Width           =   555
+      End
+      Begin VB.CommandButton deletaruma 
+         BackColor       =   &H008080FF&
+         Caption         =   "del"
+         Height          =   375
+         Left            =   4455
+         Style           =   1  'Graphical
+         TabIndex        =   44
+         ToolTipText     =   "deletar áudio selecionado"
+         Top             =   465
+         Width           =   555
+      End
+      Begin VB.CommandButton armar2 
+         BackColor       =   &H0080C0FF&
+         Caption         =   "stream"
+         Height          =   375
+         Left            =   5040
+         Style           =   1  'Graphical
+         TabIndex        =   43
+         ToolTipText     =   "abrir em nova cartucheira"
+         Top             =   465
+         Width           =   690
+      End
+      Begin VB.CheckBox autoload 
+         BackColor       =   &H000000FF&
+         Caption         =   "AUTOPLAY"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   285
+         Left            =   45
+         Style           =   1  'Graphical
+         TabIndex        =   42
+         ToolTipText     =   "Serve para executar automaticamente um áudio"
+         Top             =   4515
+         Width           =   1275
+      End
+      Begin VB.CheckBox autocross 
+         BackColor       =   &H000000FF&
+         Caption         =   "Autocross"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
+         Height          =   285
+         Left            =   1350
+         MaskColor       =   &H00E0E0E0&
+         Style           =   1  'Graphical
+         TabIndex        =   41
+         ToolTipText     =   "Utilizado para Intercalar audios entre cart. 1 e 2"
+         Top             =   4515
+         Width           =   1005
+      End
+      Begin VB.CommandButton cmdPausa 
+         BackColor       =   &H008080FF&
+         Caption         =   "Pausa"
+         Height          =   375
+         Left            =   765
+         Style           =   1  'Graphical
+         TabIndex        =   40
+         ToolTipText     =   "Utilizado para o operador interromper o AUTOPLAY"
+         Top             =   465
+         Width           =   735
+      End
+      Begin MSComctlLib.ListView playlistView 
+         Height          =   3570
+         Left            =   45
+         TabIndex        =   50
+         Top             =   870
+         Width           =   6585
+         _ExtentX        =   11615
+         _ExtentY        =   6297
+         View            =   3
+         LabelEdit       =   1
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         OLEDropMode     =   1
+         GridLines       =   -1  'True
+         PictureAlignment=   5
+         _Version        =   393217
+         ColHdrIcons     =   "listaImagens1"
+         ForeColor       =   -2147483640
+         BackColor       =   12648447
+         BorderStyle     =   1
+         Appearance      =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         OLEDropMode     =   1
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "Playlist de áudios"
+            Object.Width           =   11350
+            ImageIndex      =   2
+         EndProperty
+      End
+      Begin MSComctlLib.ListView lstStreamAberto 
+         Height          =   4275
+         Left            =   -74955
+         TabIndex        =   53
+         Top             =   495
+         Width           =   6585
+         _ExtentX        =   11615
+         _ExtentY        =   7541
+         View            =   3
+         LabelEdit       =   1
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         GridLines       =   -1  'True
+         _Version        =   393217
+         ColHdrIcons     =   "listaImagens1"
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "Streams"
+            Object.Width           =   11290
+            ImageIndex      =   1
+         EndProperty
+      End
+      Begin VB.Label LabelCalcBloco 
+         Alignment       =   2  'Center
+         BackColor       =   &H80000005&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   "0"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H80000008&
+         Height          =   300
+         Left            =   4365
+         TabIndex        =   51
+         Top             =   4515
+         Width           =   2145
+      End
+   End
+   Begin TabDlg.SSTab tab1 
+      Height          =   6180
+      Left            =   45
+      TabIndex        =   4
+      ToolTipText     =   "Insere áudios, gerencia comerciais, carrega vinhetas e carrega a partir de máscaras."
+      Top             =   4005
+      Width           =   7755
+      _ExtentX        =   13679
+      _ExtentY        =   10901
+      _Version        =   393216
+      Style           =   1
+      Tabs            =   7
+      TabsPerRow      =   7
+      TabHeight       =   520
+      BackColor       =   -2147483644
+      ForeColor       =   -2147483641
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      TabCaption(0)   =   "Eventos"
+      TabPicture(0)   =   "Form1.frx":89C88
+      Tab(0).ControlEnabled=   -1  'True
+      Tab(0).Control(0)=   "frmArquivos"
+      Tab(0).Control(0).Enabled=   0   'False
+      Tab(0).ControlCount=   1
+      TabCaption(1)   =   "Apoios"
+      TabPicture(1)   =   "Form1.frx":89CA4
+      Tab(1).ControlEnabled=   0   'False
+      Tab(1).Control(0)=   "Frame4"
+      Tab(1).Control(1)=   "arvoreComercial"
+      Tab(1).ControlCount=   2
+      TabCaption(2)   =   "Lembretes"
+      TabPicture(2)   =   "Form1.frx":89CC0
+      Tab(2).ControlEnabled=   0   'False
+      Tab(2).Control(0)=   "caixaderecados"
+      Tab(2).ControlCount=   1
+      TabCaption(3)   =   "Vinhetas"
+      TabPicture(3)   =   "Form1.frx":89CDC
+      Tab(3).ControlEnabled=   0   'False
+      Tab(3).Control(0)=   "lblVinInfo(0)"
+      Tab(3).Control(1)=   "lblVinInfo(1)"
+      Tab(3).Control(2)=   "lblVinInfo(2)"
+      Tab(3).Control(3)=   "lblVinInfo(3)"
+      Tab(3).Control(4)=   "lblVinInfo(4)"
+      Tab(3).Control(5)=   "lblVinInfo(5)"
+      Tab(3).Control(6)=   "lblVinInfo(6)"
+      Tab(3).Control(7)=   "lblVinInfo(7)"
+      Tab(3).Control(8)=   "lblVinInfo(8)"
+      Tab(3).Control(9)=   "lblVinInfo(9)"
+      Tab(3).Control(10)=   "lblVinInfo(10)"
+      Tab(3).Control(11)=   "lblVinInfo(11)"
+      Tab(3).Control(12)=   "lblVinInfo(12)"
+      Tab(3).Control(13)=   "lblVinInfo(13)"
+      Tab(3).Control(14)=   "lblVinInfo(14)"
+      Tab(3).Control(15)=   "lblVinInfo(15)"
+      Tab(3).Control(16)=   "lblVinInfo(16)"
+      Tab(3).Control(17)=   "lblVinInfo(17)"
+      Tab(3).Control(18)=   "lblVinInfo(18)"
+      Tab(3).Control(19)=   "lblVinInfo(19)"
+      Tab(3).Control(20)=   "lblVinInfo(20)"
+      Tab(3).Control(21)=   "lblVinInfo(21)"
+      Tab(3).Control(22)=   "lblVinInfo(22)"
+      Tab(3).Control(23)=   "lblVinInfo(23)"
+      Tab(3).Control(24)=   "vinheta1(12)"
+      Tab(3).Control(25)=   "vinheta1(13)"
+      Tab(3).Control(26)=   "vinheta1(14)"
+      Tab(3).Control(27)=   "vinheta1(15)"
+      Tab(3).Control(28)=   "vinheta1(0)"
+      Tab(3).Control(29)=   "vinheta1(1)"
+      Tab(3).Control(30)=   "vinheta1(2)"
+      Tab(3).Control(31)=   "vinheta1(3)"
+      Tab(3).Control(32)=   "vinheta1(4)"
+      Tab(3).Control(33)=   "vinheta1(5)"
+      Tab(3).Control(34)=   "vinheta1(6)"
+      Tab(3).Control(35)=   "vinheta1(7)"
+      Tab(3).Control(36)=   "vinheta1(8)"
+      Tab(3).Control(37)=   "vinheta1(9)"
+      Tab(3).Control(38)=   "vinheta1(10)"
+      Tab(3).Control(39)=   "vinheta1(11)"
+      Tab(3).Control(40)=   "vinheta1(16)"
+      Tab(3).Control(41)=   "vinheta1(17)"
+      Tab(3).Control(42)=   "vinheta1(18)"
+      Tab(3).Control(43)=   "vinheta1(19)"
+      Tab(3).Control(44)=   "vinheta1(20)"
+      Tab(3).Control(45)=   "vinheta1(21)"
+      Tab(3).Control(46)=   "vinheta1(22)"
+      Tab(3).Control(47)=   "vinheta1(23)"
+      Tab(3).ControlCount=   48
+      TabCaption(4)   =   "Vinhetas2"
+      TabPicture(4)   =   "Form1.frx":89CF8
+      Tab(4).ControlEnabled=   0   'False
+      Tab(4).Control(0)=   "lblVinInfo(59)"
+      Tab(4).Control(1)=   "lblVinInfo(58)"
+      Tab(4).Control(2)=   "lblVinInfo(57)"
+      Tab(4).Control(3)=   "lblVinInfo(56)"
+      Tab(4).Control(4)=   "lblVinInfo(55)"
+      Tab(4).Control(5)=   "lblVinInfo(54)"
+      Tab(4).Control(6)=   "lblVinInfo(53)"
+      Tab(4).Control(7)=   "lblVinInfo(52)"
+      Tab(4).Control(8)=   "lblVinInfo(51)"
+      Tab(4).Control(9)=   "lblVinInfo(50)"
+      Tab(4).Control(10)=   "lblVinInfo(49)"
+      Tab(4).Control(11)=   "lblVinInfo(48)"
+      Tab(4).Control(12)=   "lblVinInfo(47)"
+      Tab(4).Control(13)=   "lblVinInfo(46)"
+      Tab(4).Control(14)=   "lblVinInfo(45)"
+      Tab(4).Control(15)=   "lblVinInfo(44)"
+      Tab(4).Control(16)=   "lblVinInfo(43)"
+      Tab(4).Control(17)=   "lblVinInfo(42)"
+      Tab(4).Control(18)=   "lblVinInfo(41)"
+      Tab(4).Control(19)=   "lblVinInfo(40)"
+      Tab(4).Control(20)=   "lblVinInfo(39)"
+      Tab(4).Control(21)=   "lblVinInfo(38)"
+      Tab(4).Control(22)=   "lblVinInfo(37)"
+      Tab(4).Control(23)=   "lblVinInfo(36)"
+      Tab(4).Control(24)=   "vinheta1(59)"
+      Tab(4).Control(25)=   "vinheta1(58)"
+      Tab(4).Control(26)=   "vinheta1(57)"
+      Tab(4).Control(27)=   "vinheta1(56)"
+      Tab(4).Control(28)=   "vinheta1(55)"
+      Tab(4).Control(29)=   "vinheta1(54)"
+      Tab(4).Control(30)=   "vinheta1(53)"
+      Tab(4).Control(31)=   "vinheta1(52)"
+      Tab(4).Control(32)=   "vinheta1(51)"
+      Tab(4).Control(33)=   "vinheta1(50)"
+      Tab(4).Control(34)=   "vinheta1(49)"
+      Tab(4).Control(35)=   "vinheta1(48)"
+      Tab(4).Control(36)=   "vinheta1(47)"
+      Tab(4).Control(37)=   "vinheta1(46)"
+      Tab(4).Control(38)=   "vinheta1(45)"
+      Tab(4).Control(39)=   "vinheta1(44)"
+      Tab(4).Control(40)=   "vinheta1(43)"
+      Tab(4).Control(41)=   "vinheta1(42)"
+      Tab(4).Control(42)=   "vinheta1(41)"
+      Tab(4).Control(43)=   "vinheta1(40)"
+      Tab(4).Control(44)=   "vinheta1(39)"
+      Tab(4).Control(45)=   "vinheta1(38)"
+      Tab(4).Control(46)=   "vinheta1(37)"
+      Tab(4).Control(47)=   "vinheta1(36)"
+      Tab(4).ControlCount=   48
+      TabCaption(5)   =   "Vinhetas Rotativas"
+      TabPicture(5)   =   "Form1.frx":89D14
+      Tab(5).ControlEnabled=   0   'False
+      Tab(5).Control(0)=   "Labelrotativas(0)"
+      Tab(5).Control(1)=   "Labelrotativas(1)"
+      Tab(5).Control(2)=   "Labelrotativas(2)"
+      Tab(5).Control(3)=   "Labelrotativas(3)"
+      Tab(5).Control(4)=   "Labelrotativas(4)"
+      Tab(5).Control(5)=   "Labelrotativas(5)"
+      Tab(5).Control(6)=   "ListaRotativas(5)"
+      Tab(5).Control(7)=   "ListaRotativas(4)"
+      Tab(5).Control(8)=   "ListaRotativas(3)"
+      Tab(5).Control(9)=   "ListaRotativas(2)"
+      Tab(5).Control(10)=   "ListaRotativas(1)"
+      Tab(5).Control(11)=   "ListaRotativas(0)"
+      Tab(5).Control(12)=   "cmdVinRotativas(1)"
+      Tab(5).Control(13)=   "cmdVinRotativas(2)"
+      Tab(5).Control(14)=   "cmdVinRotativas(3)"
+      Tab(5).Control(15)=   "cmdVinRotativas(4)"
+      Tab(5).Control(16)=   "cmdVinRotativas(5)"
+      Tab(5).Control(17)=   "cmdVinRotativas(0)"
+      Tab(5).ControlCount=   18
+      TabCaption(6)   =   "Espelho"
+      TabPicture(6)   =   "Form1.frx":89D30
+      Tab(6).ControlEnabled=   0   'False
+      Tab(6).Control(0)=   "Espelho"
+      Tab(6).Control(1)=   "streamEspelho"
+      Tab(6).Control(2)=   "cmdTreeCart2"
+      Tab(6).Control(3)=   "cmdTreeCart1"
+      Tab(6).Control(4)=   "espelhoToPlaylist"
+      Tab(6).ControlCount=   5
+      Begin VB.CommandButton espelhoToPlaylist 
+         Caption         =   ">>"
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   12
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Left            =   -67980
+         Style           =   1  'Graphical
+         TabIndex        =   219
+         ToolTipText     =   "transfere múltiplos áudios"
+         Top             =   4020
+         Width           =   645
+      End
+      Begin VB.CommandButton cmdTreeCart1 
+         Caption         =   "Cart1"
+         Enabled         =   0   'False
+         Height          =   645
+         Left            =   -67980
+         Style           =   1  'Graphical
+         TabIndex        =   218
+         Top             =   2085
+         Width           =   645
+      End
+      Begin VB.CommandButton cmdTreeCart2 
+         Caption         =   "Cart2"
+         Enabled         =   0   'False
+         Height          =   645
+         Left            =   -67980
+         Style           =   1  'Graphical
+         TabIndex        =   217
+         Top             =   2760
+         Width           =   645
+      End
+      Begin VB.CommandButton streamEspelho 
+         Caption         =   "Stream"
+         Enabled         =   0   'False
+         Height          =   555
+         Left            =   -67980
+         TabIndex        =   216
+         Top             =   3435
+         Width           =   645
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   36
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   191
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   37
+         Left            =   -71175
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   190
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   38
+         Left            =   -72975
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   189
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   39
+         Left            =   -74910
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   188
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   40
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   187
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   41
+         Left            =   -71175
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   186
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   42
+         Left            =   -72975
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   185
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   43
+         Left            =   -74910
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   184
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   44
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   183
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2520
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   45
+         Left            =   -71175
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   182
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2520
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   46
+         Left            =   -72975
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   181
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2520
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   47
+         Left            =   -74910
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   180
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2520
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   48
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   179
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1575
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   49
+         Left            =   -71175
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   178
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1575
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   50
+         Left            =   -72975
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   177
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1575
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   51
+         Left            =   -74910
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   176
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1575
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   52
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   175
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   675
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   53
+         Left            =   -71175
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   174
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   675
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   54
+         Left            =   -72975
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   173
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   675
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   55
+         Left            =   -74910
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   172
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   675
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   56
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   171
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3375
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   57
+         Left            =   -71175
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   170
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3375
+         Width           =   1950
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   58
+         Left            =   -72975
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   169
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3375
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   645
+         Index           =   59
+         Left            =   -74910
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   168
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3375
+         Width           =   1950
+      End
+      Begin VB.CommandButton cmdVinRotativas 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "<vazio>"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   1185
+         Index           =   0
+         Left            =   -74955
+         Style           =   1  'Graphical
+         TabIndex        =   155
+         Top             =   435
+         Width           =   2535
+      End
+      Begin VB.CommandButton cmdVinRotativas 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "<vazio>"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   1185
+         Index           =   5
+         Left            =   -69825
+         Style           =   1  'Graphical
+         TabIndex        =   154
+         Top             =   3270
+         Width           =   2445
+      End
+      Begin VB.CommandButton cmdVinRotativas 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "<vazio>"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   1185
+         Index           =   4
+         Left            =   -72390
+         Style           =   1  'Graphical
+         TabIndex        =   153
+         Top             =   3270
+         Width           =   2535
+      End
+      Begin VB.CommandButton cmdVinRotativas 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "<vazio>"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   1185
+         Index           =   3
+         Left            =   -74910
+         Style           =   1  'Graphical
+         TabIndex        =   152
+         Top             =   3270
+         Width           =   2490
+      End
+      Begin VB.CommandButton cmdVinRotativas 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "<vazio>"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   1185
+         Index           =   2
+         Left            =   -69825
+         Style           =   1  'Graphical
+         TabIndex        =   151
+         Top             =   435
+         Width           =   2445
+      End
+      Begin VB.CommandButton cmdVinRotativas 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "<vazio>"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   1185
+         Index           =   1
+         Left            =   -72390
+         Style           =   1  'Graphical
+         TabIndex        =   150
+         Top             =   435
+         Width           =   2535
+      End
+      Begin MSComctlLib.ListView ListaRotativas 
+         Height          =   825
+         Index           =   0
+         Left            =   -74955
+         TabIndex        =   149
+         Top             =   1650
+         Width           =   2535
+         _ExtentX        =   4471
+         _ExtentY        =   1455
+         View            =   3
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         HideColumnHeaders=   -1  'True
+         _Version        =   393217
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "vinhetas"
+            Object.Width           =   8819
+         EndProperty
+      End
+      Begin MSComctlLib.TreeView arvoreComercial 
+         Height          =   4815
+         Left            =   -74910
+         TabIndex        =   84
+         Top             =   1260
+         Width           =   7560
+         _ExtentX        =   13335
+         _ExtentY        =   8493
+         _Version        =   393217
+         Style           =   7
+         Appearance      =   1
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   23
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   39
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   22
+         Left            =   -71160
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   38
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   21
+         Left            =   -72960
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   37
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   20
+         Left            =   -74880
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   36
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   5085
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   19
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   35
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   18
+         Left            =   -71160
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   34
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   17
+         Left            =   -72960
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   33
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   16
+         Left            =   -74880
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   32
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   4230
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   11
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   27
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2550
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   10
+         Left            =   -71160
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   26
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2550
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   9
+         Left            =   -72960
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   25
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2550
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   8
+         Left            =   -74880
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   24
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   2550
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   7
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   23
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1605
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   6
+         Left            =   -71160
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   22
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1605
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   5
+         Left            =   -72960
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   21
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1605
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   690
+         Index           =   4
+         Left            =   -74880
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   20
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   1605
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   675
+         Index           =   3
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   19
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   690
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   675
+         Index           =   2
+         Left            =   -71160
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   18
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   690
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   675
+         Index           =   1
+         Left            =   -72960
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   17
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   690
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   675
+         Index           =   0
+         Left            =   -74880
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   16
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   690
+         Width           =   1935
+      End
+      Begin VB.Frame Frame4 
+         Caption         =   "arquivos"
+         Height          =   735
+         Left            =   -74910
+         TabIndex        =   13
+         Top             =   495
+         Width           =   3630
+         Begin VB.CommandButton abrircomerciais 
+            Height          =   375
+            Left            =   120
+            Picture         =   "Form1.frx":89D4C
+            Style           =   1  'Graphical
+            TabIndex        =   14
+            Top             =   240
+            Width           =   495
+         End
+         Begin VB.Label MonitorCom 
+            Alignment       =   2  'Center
+            Caption         =   "Em espera"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   18
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   390
+            Left            =   1125
+            TabIndex        =   15
+            Top             =   225
+            Width           =   2415
+         End
+      End
+      Begin VB.TextBox caixaderecados 
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   14.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   5580
+         Left            =   -74910
+         MultiLine       =   -1  'True
+         ScrollBars      =   2  'Vertical
+         TabIndex        =   12
+         Text            =   "Form1.frx":8C0DC
+         Top             =   450
+         Width           =   7545
+      End
+      Begin VB.Frame frmArquivos 
+         ForeColor       =   &H80000007&
+         Height          =   5790
+         Left            =   90
+         TabIndex        =   5
+         Top             =   315
+         Width           =   7575
+         Begin VB.CommandButton cmdCue 
+            Caption         =   "CUE"
+            Height          =   600
+            Left            =   6840
+            TabIndex        =   167
+            Top             =   5130
+            Width           =   645
+         End
+         Begin VB.CommandButton streamPrev 
+            Caption         =   "Stream"
+            Height          =   600
+            Left            =   6840
+            TabIndex        =   148
+            Top             =   3825
+            Width           =   645
+         End
+         Begin VB.DriveListBox DrivePrincipal 
+            BeginProperty Font 
+               Name            =   "Tahoma"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   315
+            Left            =   105
+            TabIndex        =   11
+            Top             =   180
+            Width           =   3375
+         End
+         Begin VB.DirListBox DirPrincipal 
+            BeginProperty Font 
+               Name            =   "Tahoma"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   1890
+            Left            =   60
+            OLEDragMode     =   1  'Automatic
+            TabIndex        =   10
+            Top             =   540
+            Width           =   7455
+         End
+         Begin VB.FileListBox FilePrincipal 
+            BeginProperty Font 
+               Name            =   "Tahoma"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   3210
+            Left            =   60
+            MultiSelect     =   2  'Extended
+            Pattern         =   "*.mp3;*.wav"
+            TabIndex        =   9
+            Top             =   2475
+            Width           =   6735
+         End
+         Begin VB.CommandButton trasfermulti 
+            Caption         =   ">>"
+            BeginProperty Font 
+               Name            =   "Tahoma"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   645
+            Left            =   6840
+            Style           =   1  'Graphical
+            TabIndex        =   8
+            ToolTipText     =   "transfere múltiplos áudios"
+            Top             =   4455
+            Width           =   645
+         End
+         Begin VB.CommandButton cmdPreview1 
+            Caption         =   "Cart1"
+            Height          =   645
+            Left            =   6840
+            Style           =   1  'Graphical
+            TabIndex        =   7
+            Top             =   2475
+            Width           =   645
+         End
+         Begin VB.CommandButton cmdPreview2 
+            Caption         =   "Cart2"
+            Height          =   645
+            Left            =   6840
+            Style           =   1  'Graphical
+            TabIndex        =   6
+            Top             =   3150
+            Width           =   645
+         End
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   15
+         Left            =   -69240
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   31
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3390
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   14
+         Left            =   -71160
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   30
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3390
+         Width           =   1935
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   13
+         Left            =   -72960
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   29
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3390
+         Width           =   1815
+      End
+      Begin VB.CommandButton vinheta1 
+         BackColor       =   &H00C0FFC0&
+         Caption         =   "vazio"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   630
+         Index           =   12
+         Left            =   -74880
+         MaskColor       =   &H00808080&
+         Style           =   1  'Graphical
+         TabIndex        =   28
+         ToolTipText     =   "Clique neste botão para abrir ou tocar um evento"
+         Top             =   3390
+         Width           =   1935
+      End
+      Begin MSComctlLib.ListView ListaRotativas 
+         Height          =   825
+         Index           =   1
+         Left            =   -72390
+         TabIndex        =   156
+         Top             =   1650
+         Width           =   2535
+         _ExtentX        =   4471
+         _ExtentY        =   1455
+         View            =   3
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         HideColumnHeaders=   -1  'True
+         _Version        =   393217
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "vinhetas"
+            Object.Width           =   8819
+         EndProperty
+      End
+      Begin MSComctlLib.ListView ListaRotativas 
+         Height          =   825
+         Index           =   2
+         Left            =   -69825
+         TabIndex        =   157
+         Top             =   1650
+         Width           =   2445
+         _ExtentX        =   4313
+         _ExtentY        =   1455
+         View            =   3
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         HideColumnHeaders=   -1  'True
+         _Version        =   393217
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "vinhetas"
+            Object.Width           =   8819
+         EndProperty
+      End
+      Begin MSComctlLib.ListView ListaRotativas 
+         Height          =   870
+         Index           =   3
+         Left            =   -74910
+         TabIndex        =   158
+         Top             =   4485
+         Width           =   2490
+         _ExtentX        =   4392
+         _ExtentY        =   1535
+         View            =   3
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         HideColumnHeaders=   -1  'True
+         _Version        =   393217
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "vinhetas"
+            Object.Width           =   8819
+         EndProperty
+      End
+      Begin MSComctlLib.ListView ListaRotativas 
+         Height          =   870
+         Index           =   4
+         Left            =   -72390
+         TabIndex        =   159
+         Top             =   4485
+         Width           =   2535
+         _ExtentX        =   4471
+         _ExtentY        =   1535
+         View            =   3
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         HideColumnHeaders=   -1  'True
+         _Version        =   393217
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "vinhetas"
+            Object.Width           =   8819
+         EndProperty
+      End
+      Begin MSComctlLib.ListView ListaRotativas 
+         Height          =   870
+         Index           =   5
+         Left            =   -69825
+         TabIndex        =   160
+         Top             =   4485
+         Width           =   2445
+         _ExtentX        =   4313
+         _ExtentY        =   1535
+         View            =   3
+         LabelWrap       =   -1  'True
+         HideSelection   =   0   'False
+         HideColumnHeaders=   -1  'True
+         _Version        =   393217
+         ForeColor       =   -2147483640
+         BackColor       =   -2147483643
+         BorderStyle     =   1
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         NumItems        =   1
+         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Text            =   "vinhetas"
+            Object.Width           =   8819
+         EndProperty
+      End
+      Begin MSComctlLib.TreeView Espelho 
+         Height          =   5670
+         Left            =   -74955
+         TabIndex        =   220
+         Top             =   390
+         Width           =   6915
+         _ExtentX        =   12197
+         _ExtentY        =   10001
+         _Version        =   393217
+         HideSelection   =   0   'False
+         Style           =   7
+         ImageList       =   "listaImagens1"
+         Appearance      =   1
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   240
+         Index           =   36
+         Left            =   -69240
+         TabIndex        =   215
+         Top             =   5700
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   240
+         Index           =   37
+         Left            =   -71175
+         TabIndex        =   214
+         Top             =   5700
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   240
+         Index           =   38
+         Left            =   -72975
+         TabIndex        =   213
+         Top             =   5700
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   240
+         Index           =   39
+         Left            =   -74865
+         TabIndex        =   212
+         Top             =   5700
+         Width           =   1905
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   40
+         Left            =   -69240
+         TabIndex        =   211
+         Top             =   4860
+         Width           =   1770
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   41
+         Left            =   -71175
+         TabIndex        =   210
+         Top             =   4860
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   42
+         Left            =   -72930
+         TabIndex        =   209
+         Top             =   4860
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   43
+         Left            =   -74910
+         TabIndex        =   208
+         Top             =   4860
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   44
+         Left            =   -69240
+         TabIndex        =   207
+         Top             =   3135
+         Width           =   1770
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   45
+         Left            =   -71175
+         TabIndex        =   206
+         Top             =   3150
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   46
+         Left            =   -72975
+         TabIndex        =   205
+         Top             =   3135
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   47
+         Left            =   -74910
+         TabIndex        =   204
+         Top             =   3150
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   48
+         Left            =   -69240
+         TabIndex        =   203
+         Top             =   2250
+         Width           =   1770
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   49
+         Left            =   -71175
+         TabIndex        =   202
+         Top             =   2250
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   50
+         Left            =   -72975
+         TabIndex        =   201
+         Top             =   2250
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   51
+         Left            =   -74910
+         TabIndex        =   200
+         Top             =   2250
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   52
+         Left            =   -69240
+         TabIndex        =   199
+         Top             =   1350
+         Width           =   1770
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   53
+         Left            =   -71175
+         TabIndex        =   198
+         Top             =   1335
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   54
+         Left            =   -72975
+         TabIndex        =   197
+         Top             =   1335
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   55
+         Left            =   -74910
+         TabIndex        =   196
+         Top             =   1335
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   56
+         Left            =   -69240
+         TabIndex        =   195
+         Top             =   3990
+         Width           =   1770
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   57
+         Left            =   -71175
+         TabIndex        =   194
+         Top             =   3990
+         Width           =   1950
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   58
+         Left            =   -72975
+         TabIndex        =   193
+         Top             =   3990
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   285
+         Index           =   59
+         Left            =   -74910
+         TabIndex        =   192
+         Top             =   3990
+         Width           =   1950
+      End
+      Begin VB.Label Labelrotativas 
+         Alignment       =   2  'Center
+         BackColor       =   &H00800000&
+         Caption         =   "Vinheta"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   690
+         Index           =   5
+         Left            =   -69825
+         TabIndex        =   166
+         Top             =   5385
+         Width           =   2445
+      End
+      Begin VB.Label Labelrotativas 
+         Alignment       =   2  'Center
+         BackColor       =   &H00800000&
+         Caption         =   "Vinheta"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   690
+         Index           =   4
+         Left            =   -72390
+         TabIndex        =   165
+         Top             =   5385
+         Width           =   2490
+      End
+      Begin VB.Label Labelrotativas 
+         Alignment       =   2  'Center
+         BackColor       =   &H00800000&
+         Caption         =   "Vinheta"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   690
+         Index           =   3
+         Left            =   -74910
+         TabIndex        =   164
+         Top             =   5385
+         Width           =   2445
+      End
+      Begin VB.Label Labelrotativas 
+         Alignment       =   2  'Center
+         BackColor       =   &H00800000&
+         Caption         =   "Vinheta"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   690
+         Index           =   2
+         Left            =   -69825
+         TabIndex        =   163
+         Top             =   2505
+         Width           =   2445
+      End
+      Begin VB.Label Labelrotativas 
+         Alignment       =   2  'Center
+         BackColor       =   &H00800000&
+         Caption         =   "Vinheta"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   690
+         Index           =   1
+         Left            =   -72390
+         TabIndex        =   162
+         Top             =   2505
+         Width           =   2490
+      End
+      Begin VB.Label Labelrotativas 
+         Alignment       =   2  'Center
+         BackColor       =   &H00800000&
+         Caption         =   "Vinheta"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   6.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   690
+         Index           =   0
+         Left            =   -74910
+         TabIndex        =   161
+         Top             =   2505
+         Width           =   2445
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   23
+         Left            =   -69240
+         TabIndex        =   83
+         Top             =   5730
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   22
+         Left            =   -71160
+         TabIndex        =   82
+         Top             =   5730
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   21
+         Left            =   -72960
+         TabIndex        =   81
+         Top             =   5730
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   20
+         Left            =   -74880
+         TabIndex        =   80
+         Top             =   5730
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   19
+         Left            =   -69240
+         TabIndex        =   79
+         Top             =   4830
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   18
+         Left            =   -71160
+         TabIndex        =   78
+         Top             =   4830
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   17
+         Left            =   -72960
+         TabIndex        =   77
+         Top             =   4830
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   16
+         Left            =   -74880
+         TabIndex        =   76
+         Top             =   4830
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   15
+         Left            =   -69240
+         TabIndex        =   75
+         Top             =   3990
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   14
+         Left            =   -71160
+         TabIndex        =   74
+         Top             =   3990
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   13
+         Left            =   -72960
+         TabIndex        =   73
+         Top             =   3990
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   12
+         Left            =   -74880
+         TabIndex        =   72
+         Top             =   3990
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   11
+         Left            =   -69240
+         TabIndex        =   71
+         Top             =   3150
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   10
+         Left            =   -71160
+         TabIndex        =   70
+         Top             =   3150
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   9
+         Left            =   -72960
+         TabIndex        =   69
+         Top             =   3150
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   8
+         Left            =   -74880
+         TabIndex        =   68
+         Top             =   3150
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   7
+         Left            =   -69240
+         TabIndex        =   67
+         Top             =   2310
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   6
+         Left            =   -71160
+         TabIndex        =   66
+         Top             =   2310
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   5
+         Left            =   -72960
+         TabIndex        =   65
+         Top             =   2310
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   4
+         Left            =   -74880
+         TabIndex        =   64
+         Top             =   2310
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   3
+         Left            =   -69240
+         TabIndex        =   63
+         Top             =   1350
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   2
+         Left            =   -71160
+         TabIndex        =   62
+         Top             =   1350
+         Width           =   1935
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   1
+         Left            =   -72960
+         TabIndex        =   61
+         Top             =   1350
+         Width           =   1815
+      End
+      Begin VB.Label lblVinInfo 
+         Alignment       =   2  'Center
+         BackColor       =   &H00808080&
+         Caption         =   "Info"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   255
+         Index           =   0
+         Left            =   -74880
+         TabIndex        =   60
+         Top             =   1350
+         Width           =   1935
+      End
+   End
+   Begin MSComctlLib.ListView ListViewBusca 
+      Height          =   1905
+      Left            =   8025
+      TabIndex        =   115
+      Top             =   2550
+      Width           =   6390
+      _ExtentX        =   11271
+      _ExtentY        =   3360
+      View            =   3
+      LabelEdit       =   1
+      LabelWrap       =   -1  'True
+      HideSelection   =   -1  'True
+      HideColumnHeaders=   -1  'True
+      GridLines       =   -1  'True
+      _Version        =   393217
+      ForeColor       =   -2147483640
+      BackColor       =   -2147483643
+      BorderStyle     =   1
+      Appearance      =   1
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      NumItems        =   1
+      BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+         Text            =   "Eventos encontrados"
+         Object.Width           =   8273
+      EndProperty
+   End
+   Begin MSComCtl2.FlatScrollBar ScrollVol2 
+      Height          =   270
+      Left            =   11610
+      TabIndex        =   131
+      Top             =   1125
+      Width           =   1455
+      _ExtentX        =   2566
+      _ExtentY        =   476
+      _Version        =   393216
+      Arrows          =   65536
+      Max             =   10
+      Orientation     =   1245185
+      Value           =   10
+   End
+   Begin MSComCtl2.FlatScrollBar ScrollVol1 
+      Height          =   270
+      Left            =   2070
+      TabIndex        =   132
+      Top             =   1125
+      Width           =   1455
+      _ExtentX        =   2566
+      _ExtentY        =   476
+      _Version        =   393216
+      Arrows          =   65536
+      Max             =   10
+      Orientation     =   1245185
+      Value           =   10
+   End
+   Begin VB.Label LabelDuracao1 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      BackStyle       =   0  'Transparent
+      Caption         =   "00:00"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   210
+      Left            =   1395
+      TabIndex        =   147
+      Top             =   1125
+      Width           =   615
+   End
+   Begin VB.Label lblled2 
+      BackColor       =   &H00000000&
+      BorderStyle     =   1  'Fixed Single
+      Height          =   315
+      Left            =   10800
+      TabIndex        =   146
+      Top             =   720
+      Width           =   315
+   End
+   Begin VB.Label lblled1 
+      BackColor       =   &H00000000&
+      BorderStyle     =   1  'Fixed Single
+      Height          =   315
+      Left            =   4050
+      TabIndex        =   145
+      Top             =   720
+      Width           =   315
+   End
+   Begin VB.Label LabelMode1 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H00000000&
+      BorderStyle     =   1  'Fixed Single
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H0000FF00&
+      Height          =   315
+      Left            =   3150
+      TabIndex        =   144
+      Top             =   270
+      Width           =   1215
+   End
+   Begin VB.Label infomp1 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H000000FF&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "CARTUCHEIRA 1"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   375
+      Left            =   180
+      TabIndex        =   143
+      Top             =   720
+      Width           =   3840
+      WordWrap        =   -1  'True
+   End
+   Begin VB.Label labelRest1 
+      BackStyle       =   0  'Transparent
+      Caption         =   "00:00"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   240
+      Left            =   180
+      TabIndex        =   142
+      Top             =   1125
+      Width           =   540
+   End
+   Begin VB.Label LabelPosition1 
+      BackStyle       =   0  'Transparent
+      Caption         =   "00:00"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   240
+      Left            =   810
+      TabIndex        =   141
+      Top             =   1125
+      Width           =   540
+   End
+   Begin VB.Label lblhora 
+      Alignment       =   2  'Center
+      BackColor       =   &H00404040&
+      BackStyle       =   0  'Transparent
+      BorderStyle     =   1  'Fixed Single
+      BeginProperty Font 
+         Name            =   "Verdana"
+         Size            =   18
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00000000&
+      Height          =   450
+      Left            =   4950
+      TabIndex        =   140
+      Top             =   1050
+      Width           =   4995
+   End
+   Begin VB.Label labelRest2 
+      BackColor       =   &H00000000&
+      BackStyle       =   0  'Transparent
+      Caption         =   "00:00"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   240
+      Left            =   13950
+      TabIndex        =   139
+      Top             =   1125
+      Width           =   555
+   End
+   Begin VB.Label LabelAvisos 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H00808080&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Avisos Comerciais"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   600
+      Left            =   150
+      TabIndex        =   138
+      Top             =   2550
+      Width           =   4035
+   End
+   Begin VB.Label LabelMode2 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H00000000&
+      BorderStyle     =   1  'Fixed Single
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H0000FF00&
+      Height          =   315
+      Left            =   10800
+      TabIndex        =   137
+      Top             =   270
+      Width           =   1290
+   End
+   Begin VB.Label LabelPosition2 
+      BackColor       =   &H00000000&
+      BackStyle       =   0  'Transparent
+      Caption         =   "00:00"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   240
+      Left            =   14535
+      TabIndex        =   136
+      Top             =   1125
+      Width           =   555
+   End
+   Begin VB.Label Labelduracao2 
+      Alignment       =   2  'Center
+      BackColor       =   &H00000000&
+      BackStyle       =   0  'Transparent
+      Caption         =   "00:00"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   240
+      Left            =   13140
+      TabIndex        =   135
+      Top             =   1125
+      Width           =   645
+   End
+   Begin VB.Label infomp2 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H000000FF&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "CARTUCHEIRA 2"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   6.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00FFFFFF&
+      Height          =   375
+      Left            =   11160
+      TabIndex        =   134
+      Top             =   720
+      Width           =   3930
+      WordWrap        =   -1  'True
+   End
+   Begin VB.Label lblLembretes 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H00808080&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Lembretes"
+      ForeColor       =   &H80000008&
+      Height          =   600
+      Left            =   150
+      TabIndex        =   133
+      Top             =   3225
+      Width           =   3510
+   End
+   Begin VB.Label lblPastaBase 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Selecione a pasta de busca"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00000000&
+      Height          =   540
+      Left            =   5025
+      TabIndex        =   117
+      Top             =   3300
+      Width           =   2430
+      WordWrap        =   -1  'True
+   End
+   Begin VB.Label lblStatusBusca 
+      BackStyle       =   0  'Transparent
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Status"
+      ForeColor       =   &H00000000&
+      Height          =   285
+      Left            =   4275
+      TabIndex        =   116
+      Top             =   2925
+      Width           =   3660
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   35
+      Left            =   13275
+      TabIndex        =   108
+      Top             =   2205
+      Width           =   1230
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   34
+      Left            =   12105
+      TabIndex        =   107
+      Top             =   2205
+      Width           =   1185
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   33
+      Left            =   10845
+      TabIndex        =   106
+      Top             =   2205
+      Width           =   1275
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   32
+      Left            =   9675
+      TabIndex        =   105
+      Top             =   2205
+      Width           =   1185
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   31
+      Left            =   8460
+      TabIndex        =   104
+      Top             =   2205
+      Width           =   1230
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   30
+      Left            =   7245
+      TabIndex        =   103
+      Top             =   2205
+      Width           =   1230
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   29
+      Left            =   6075
+      TabIndex        =   102
+      Top             =   2205
+      Width           =   1185
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   28
+      Left            =   4905
+      TabIndex        =   101
+      Top             =   2205
+      Width           =   1185
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   27
+      Left            =   3690
+      TabIndex        =   100
+      Top             =   2205
+      Width           =   1230
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   26
+      Left            =   2430
+      TabIndex        =   99
+      Top             =   2205
+      Width           =   1275
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   25
+      Left            =   1260
+      TabIndex        =   98
+      Top             =   2205
+      Width           =   1185
+   End
+   Begin VB.Label lblVinInfo 
+      Alignment       =   2  'Center
+      BackColor       =   &H00808080&
+      Caption         =   "Info"
+      ForeColor       =   &H00FFFFFF&
+      Height          =   285
+      Index           =   24
+      Left            =   90
+      TabIndex        =   97
+      Top             =   2205
+      Width           =   1185
+   End
+   Begin VB.Label lblexecutando 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Executando:"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   330
+      Left            =   7830
+      TabIndex        =   58
+      Top             =   9450
+      Width           =   6720
+   End
+   Begin VB.Label lblproximo 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      BorderStyle     =   1  'Fixed Single
+      Caption         =   "Próxima:"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   330
+      Left            =   7830
+      TabIndex        =   57
+      Top             =   9855
+      Width           =   6720
+   End
+   Begin VB.Image Image1 
+      Height          =   1335
+      Left            =   90
+      Picture         =   "Form1.frx":8C0FD
+      Stretch         =   -1  'True
+      Top             =   135
+      Width           =   4440
+   End
+   Begin VB.Image Image2 
+      Height          =   1335
+      Left            =   10650
+      Picture         =   "Form1.frx":9005D
+      Stretch         =   -1  'True
+      Top             =   135
+      Width           =   4500
+   End
+   Begin VB.Menu arquivo 
+      Caption         =   "Arquivo"
+      Begin VB.Menu abrirmusica 
+         Caption         =   "Abrir música"
+      End
+      Begin VB.Menu svPlst 
+         Caption         =   "Salvar Playlist"
+      End
+   End
+   Begin VB.Menu opcoes 
+      Caption         =   "Ferramentas"
+      Begin VB.Menu reopenEspelho 
+         Caption         =   "Reabrir Espelho"
+      End
+      Begin VB.Menu reopenCom 
+         Caption         =   "Reabrir Comerciais"
+      End
+      Begin VB.Menu reopenAvisos 
+         Caption         =   "Reabrir Avisos"
+      End
+      Begin VB.Menu cfgEditor 
+         Caption         =   "Preferências"
+      End
+      Begin VB.Menu mnulistadecom 
+         Caption         =   "Lista de áudios executados"
+      End
+   End
+   Begin VB.Menu vinhetasMenu 
+      Caption         =   "Vinhetas"
+      Begin VB.Menu abrVinSup 
+         Caption         =   "Abrir vinhetas Superiores"
+      End
+      Begin VB.Menu abrVinInf 
+         Caption         =   "Abrir vinhetas Inferiores"
+      End
+      Begin VB.Menu svVinSup 
+         Caption         =   "Salvar Vinhetas Superiores"
+      End
+      Begin VB.Menu svVin 
+         Caption         =   "Salvar Vinhetas Inferiores"
+      End
+   End
+   Begin VB.Menu sobre 
+      Caption         =   "Sobre"
+   End
+   Begin VB.Menu popupcomerciais 
+      Caption         =   "popupcomerciais"
+      Visible         =   0   'False
+      Begin VB.Menu removecom 
+         Caption         =   "Remover comercial"
+      End
+   End
+   Begin VB.Menu popupVinhetas 
+      Caption         =   "popupVinhetas"
+      Visible         =   0   'False
+      Begin VB.Menu apagarslot 
+         Caption         =   "Esvaziar slot"
+      End
+   End
+   Begin VB.Menu popupPlaylist 
+      Caption         =   "popupPlaylist"
+      Visible         =   0   'False
+      Begin VB.Menu mnuApagar 
+         Caption         =   "Apagar áudio"
+      End
+      Begin VB.Menu mnuOpenStream 
+         Caption         =   "Abrir nova cartucheira"
+      End
+   End
+End
+Attribute VB_Name = "Form1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Declare Function ShowWindow Lib "user32" (ByVal hWnd As Long, ByVal nCmdShow As Long) As Long
+Private Const SW_RESTORE = 9
+Dim stream1 As Long
+Dim stream1info As BASS_CHANNELINFO
+Dim stream2 As Long
+Dim stream2info As BASS_CHANNELINFO
+Dim crosspoint1 As Long
+Dim crosspoint2 As Long
+Dim playlist() As audioItem 'LISTA DE AUDIOS DA PLAYLIST
+Dim vinhetas(60) As vinhetas 'LISTA DE VINHETAS
+Dim vinhetasRotativas(5) As vinhetas 'LISTA DE VINHETAS
+Dim tamanhobloco As Long
+Dim listaComercial() As comerciais 'lista dos diretórios de comerciais
+Dim listaAvisos() As avisos
+Dim ecadcounter As Integer
+Dim rotatcnt(6) As Integer
+Dim itemdeapoio(2) As String
+Dim vinhetaIndex As Integer
+Dim initdata(4) As String 'dados de inicialização de comerciais, espelho e avisos
+
+
+Private Sub abrircomerciais_Click()
+ReDim Preserve listaComercial(0)
+dialogo1.Filter = "lista de comerciais (*.lsc)|*.lsc"
+dialogo1.DefaultExt = "lsc"
+dialogo1.flags = &H2
+dialogo1.filename = vbNullString
+dialogo1.ShowOpen
+If Not (dialogo1.filename Like vbNullString) Then
+    Call openfileCom(dialogo1.filename, listaComercial)
+End If
+End Sub
+
+Private Sub apagarlista_Click()
+If playlistView.ListItems.Count > 0 Then Call limparPlaylist(playlist, tamanhobloco, playlistView)
+End Sub
+
+Private Sub apagarslot_Click()
+If Not (vinheta1(vinhetaIndex).Caption Like "vazio") And Not (lblVinInfo(vinhetaIndex).Caption Like "Info") Then
+Call stopFile(vinhetas(vinhetaIndex).id)
+vinheta1(vinhetaIndex).Caption = "vazio"
+lblVinInfo(vinhetaIndex).Caption = "Info"
+End If
+End Sub
+
+Private Sub armar2_Click()
+If playlistView.ListItems.Count > 0 Then
+    Dim stream As Form3
+    Set stream = New Form3
+    Call setInfoEvent(playlist(playlistView.SelectedItem.index)) 'função para diponibilizar o nome do arquivo a ser aberto para form3
+    stream.Show , Me
+    handle = "S" & LTrim$(Str(stream.hWnd))
+    lstStreamAberto.ListItems.Add , handle, playlistView.SelectedItem.Text
+End If
+End Sub
+Private Sub avisovisto_Click()
+LabelAvisos.BackColor = &H808080
+lblLembretes.BackColor = &H808080
+End Sub
+Private Sub bw1_Click()
+Call setPosition(stream1, -1000000)
+End Sub
+
+Private Sub bw2_Click()
+Call setPosition(stream2, -1000000)
+End Sub
+
+Private Sub cfgEditor_Click()
+Form4.Show
+End Sub
+
+Private Sub cmdAbrirVinSup_Click()
+    dialogo1.Filter = "lista de vinhetas (*.vin)|*.vin"
+    dialogo1.DefaultExt = "vin"
+    dialogo1.flags = &H2
+    dialogo1.filename = vbNullString
+    dialogo1.ShowOpen
+    Call openVinhetas(vinhetas, dialogo1.filename)
+End Sub
+
+Private Sub cmdBusca_Click()
+If txtBusca.Text = "" Then Exit Sub
+cmdBusca.Enabled = False
+cmdPastaBase.Enabled = False
+ListViewBusca.ListItems.Clear
+If findFiles(lblPastaBase.Caption, "*.*", txtBusca.Text) Then
+cmdCart1busca.Enabled = True
+cmdCart2busca.Enabled = True
+cmdToPlaylist.Enabled = True
+End If
+cmdBusca.Enabled = True
+cmdPastaBase.Enabled = True
+
+End Sub
+
+Private Sub cmdCart1busca_Click()
+If ListViewBusca.ListItems.Count > 0 Then
+Call openFile(1, ListViewBusca.SelectedItem.Key, ListViewBusca.SelectedItem.Text, stream1, stream1info, LabelDuracao1, infomp1, LabelPosition1, labelRest1, lblled1)
+End If
+End Sub
+
+Private Sub cmdCart2busca_Click()
+If ListViewBusca.ListItems.Count > 0 Then
+Call openFile(1, ListViewBusca.SelectedItem.Key, ListViewBusca.SelectedItem.Text, stream2, stream2info, Labelduracao2, infomp2, LabelPosition2, labelRest2, lblled2)
+End If
+End Sub
+
+Private Sub cmdCue_Click()
+    If FilePrincipal.filename <> vbNullString Then
+    Dim item As audioItem
+    Dim streamCue As Form2
+    Set streamCue = New Form2
+    For X = 0 To FilePrincipal.ListCount
+        If FilePrincipal.Selected(X) Then
+        item.nome = FilePrincipal.List(X)
+        Exit For
+        End If
+    Next X
+    item.path = FilePrincipal.path
+    Call setInfoEvent(item) 'função para diponibilizar o nome do arquivo a ser aberto para form3
+    streamCue.Show , Me
+    handle = "S" & LTrim$(Str(streamCue.hWnd))
+    lstStreamAberto.ListItems.Add , handle, item.nome
+    End If
+End Sub
+
+Private Sub cmdFade1_Click()
+TimerFade1.Enabled = True
+End Sub
+
+Private Sub cmdFade2_Click()
+TimerFade2.Enabled = True
+End Sub
+Private Sub cmdLimparSup_Click()
+For cont = 0 To 59
+If Not (vinheta1(cont).Caption Like "vazio") And Not (lblVinInfo(cont).Caption Like "Info") Then
+Call stopFile(vinhetas(cont).id)
+vinheta1(cont).Caption = "vazio"
+lblVinInfo(cont).Caption = "Info"
+End If
+Next cont
+End Sub
+
+Private Sub cmdPastaBase_Click()
+Form8.Show
+End Sub
+
+Private Sub cmdPausa_Click()
+Call toPlaylist(1, -1, "PAUSA", "PAUSA", playlist, tamanhobloco, playlistView)
+End Sub
+Private Sub cmdSvVinSup_Click()
+    dialogo1.Filter = "lista de vinhetas (*.vin)|*.vin"
+    dialogo1.DefaultExt = "vin"
+    dialogo1.flags = &H2
+    dialogo1.ShowSave
+    Call saveVinhetas(vinhetas, dialogo1.filename)
+End Sub
+Private Sub cmdToPlaylist_Click()
+Dim pos As Integer
+If playlistView.ListItems.Count > 0 Then
+    pos = playlistView.SelectedItem.index + 1
+    Call toPlaylist(pos, 0, Left$(ListViewBusca.SelectedItem.Key, Len(ListViewBusca.SelectedItem.Key) - (Len(ListViewBusca.SelectedItem.Text) + 1)), ListViewBusca.SelectedItem.Text, playlist, tamanhobloco, playlistView)
+Else: Call toPlaylist(1, 0, Left$(ListViewBusca.SelectedItem.Key, Len(ListViewBusca.SelectedItem.Key) - (Len(ListViewBusca.SelectedItem.Text) + 1)), ListViewBusca.SelectedItem.Text, playlist, tamanhobloco, playlistView)
+End If
+End Sub
+
+Private Sub cmdTreeCart1_Click()
+Call openFile(1, Espelho.SelectedItem.Key, Espelho.SelectedItem.Text, stream1, stream1info, LabelDuracao1, infomp1, LabelPosition1, labelRest1, lblled1)
+End Sub
+
+Private Sub cmdTreeCart2_Click()
+Call openFile(1, Espelho.SelectedItem.Key, Espelho.SelectedItem.Text, stream2, stream2info, Labelduracao2, infomp2, LabelPosition2, labelRest2, lblled2)
+End Sub
+
+Private Sub cmdVinRotativas_Click(index As Integer)
+If cmdVinRotativas(index).Caption = "<vazio>" Then Exit Sub
+If Not (BASS_ChannelIsActive(vinhetasRotativas(index).id) = BASS_ACTIVE_PLAYING) Then
+    vinhetasRotativas(index).nome = ListaRotativas(index).ListItems(rotatcnt(index) + 1).Text
+    vinhetasRotativas(index).caminho = ListaRotativas(index).ListItems(rotatcnt(index) + 1).Key
+    Call openFile(1, vinhetasRotativas(index).caminho, vinhetasRotativas(index).nome, vinhetasRotativas(index).id, vinhetasRotativas(index).info, Labelrotativas(index), cmdVinRotativas(index))
+    rotatcnt(index) = rotatcnt(index) + 1
+    PlayFile (vinhetasRotativas(index).id)
+    If rotatcnt(index) = ListaRotativas(index).ListItems.Count Then rotatcnt(index) = 0
+    Labelrotativas(index).Caption = Labelrotativas(index).Caption & vbCrLf & "PROX: " & ListaRotativas(index).ListItems(rotatcnt(index) + 1).Text
+Else
+    stopFile (vinhetasRotativas(index).id)
+End If
+End Sub
+Private Sub espelhoToPlaylist_Click()
+Dim pos As Integer
+If playlistView.ListItems.Count > 0 Then pos = playlistView.SelectedItem.index Else pos = 1
+Call toPlaylist(pos, 0, Left$(Espelho.SelectedItem.Key, Len(Espelho.SelectedItem.Key) - (Len(Espelho.SelectedItem.Text) + 1)), Espelho.SelectedItem.Text, playlist, tamanhobloco, playlistView)
+End Sub
+Private Sub deletaruma_Click()
+If playlistView.ListItems.Count > 0 Then Call apagar(playlistView.SelectedItem.index, playlist, tamanhobloco, playlistView)
+End Sub
+
+Private Sub downlist_Click()
+On Error GoTo error
+If playlistView.ListItems.Count > 1 Then
+    If playlistView.SelectedItem.index < playlistView.ListItems.Count Then
+        permutaVetor playlistView.SelectedItem.index, 1, playlist
+        itemdeapoio(0) = playlistView.ListItems(playlistView.SelectedItem.index + 1).Text
+        itemdeapoio(1) = playlistView.ListItems(playlistView.SelectedItem.index + 1).Key
+        playlistView.ListItems.Remove (playlistView.SelectedItem.index + 1)
+        If playlistView.SelectedItem.index <> 1 Then
+            playlistView.ListItems.Add playlistView.SelectedItem.index, itemdeapoio(1), itemdeapoio(0)
+        Else
+            playlistView.ListItems.Add 1, itemdeapoio(1), itemdeapoio(0)
+        End If
+    End If
+End If
+Exit Sub
+error:
+End Sub
+
+Private Sub Espelho_NodeClick(ByVal Node As MSComctlLib.Node)
+cmdTreeCart1.Enabled = True
+cmdTreeCart2.Enabled = True
+streamEspelho.Enabled = True
+espelhoToPlaylist.Enabled = True
+End Sub
+
+Private Sub FilePrincipal_DblClick()
+Dim pos As Integer
+If playlistView.ListItems.Count > 0 Then pos = playlistView.SelectedItem.index + 1 Else pos = 1
+Call toPlaylist(pos, 0, FilePrincipal.path, FilePrincipal.filename, playlist, tamanhobloco, playlistView)
+End Sub
+Private Sub Form_Initialize()
+Dim path As String
+Dim nome As String
+'----------------------------------
+Dim initbuffer As String
+Dim initc As Integer
+initc = 1
+ReDim playlist(0)
+ReDim listaComercial(0)
+ReDim listaAvisos(0)
+
+'--------ARQUIVO DE CONFIGURAÇÃO-------
+On Error GoTo erroPrinc
+Open "c:\ressonance\configressonance.txt" For Input As #10
+Do Until EOF(10)
+    Line Input #10, initbuffer
+    If InStr(1, initbuffer, "#") Then
+    initdata(initc) = Mid$(initbuffer, 2)
+    initc = initc + 1
+    End If
+Loop
+Close #10
+'---------------------------------'
+Call abrirAvisos(listaAvisos, initdata(1))
+Call openfileCom(initdata(3), listaComercial)
+'---------ESPELHO-----------------'
+On Error GoTo fileerror
+Espelho.Nodes.Add , , "root", "Raiz"
+Espelho.Nodes("root").Expanded = True
+Open initdata(2) For Input As #15
+Do Until EOF(15)
+    Line Input #15, path
+    Line Input #15, nome
+    Espelho.Nodes.Add "root", tvwChild, path, nome, 1
+    'rotina para ler os arquivos dentro do diretório
+    Call addNodes(path & "\", "*.*", path)
+Loop
+Close #15
+'------------VINHETAS ROTATIVAS------------------
+initc = 0
+Open initdata(4) For Input As #11
+Do Until EOF(11) Or initc = 6
+    Line Input #11, initbuffer
+    Call readFolder(initbuffer, "*.mp3", ListaRotativas(initc), cmdVinRotativas(initc))
+    initc = initc + 1
+Loop
+Close #11
+Exit Sub
+erroPrinc:
+    LabelAvisos.Caption = "Erro no arquivo de config. principal"
+    Close #10
+    Exit Sub
+fileerror:
+    LabelAvisos.Caption = "Erro na abertura de rotativas ou espelho."
+    Close #15
+    Close #11
+End Sub
+
+Private Sub Form_Load()
+Call IntializeBass(Form1)
+Call StartVu
+Me.Show 'para fazer o programa aparecer antes das rotinas de carregar espelho, etc...
+End Sub
+
+Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+ conf = MsgBox("Tem certeza que deseja fechar?", vbYesNo, "Cuidado!")
+If conf = 7 Then
+    Cancel = True
+    Exit Sub
+Else
+    Set Form1 = Nothing
+End If
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+Call releaseBass
+End 'para forçar o fim do programa
+End Sub
+'*************************************************************************'
+Private Sub DrivePrincipal_Change()
+On Error GoTo deviceError
+    DirPrincipal.path = DrivePrincipal.Drive
+    Exit Sub
+deviceError:
+    MsgBox "Drive " & DrivePrincipal.Drive & " não disponível"
+End Sub
+
+Private Sub DirPrincipal_Change()
+    FilePrincipal.path = DirPrincipal.path
+End Sub
+'*************************************************************************'
+Private Sub cmdPreview1_Click()
+If FilePrincipal.filename <> vbNullString Then
+Call openFile(1, FilePrincipal.path & "\" & FilePrincipal.filename, FilePrincipal.filename, stream1, stream1info, LabelDuracao1, infomp1, LabelPosition1, labelRest1, lblled1)
+End If
+End Sub
+Private Sub cmdPreview2_Click()
+If FilePrincipal.filename <> vbNullString Then
+Call openFile(1, FilePrincipal.path & "\" & FilePrincipal.filename, FilePrincipal.filename, stream2, stream2info, Labelduracao2, infomp2, LabelPosition2, labelRest2, lblled2)
+End If
+End Sub
+Private Sub fw1_Click()
+Call setPosition(stream1, 1000000)
+End Sub
+
+Private Sub fw2_Click()
+Call setPosition(stream2, 1000000)
+End Sub
+
+Private Sub ListView1_BeforeLabelEdit(index As Integer, Cancel As Integer)
+
+End Sub
+
+Private Sub lstStreamAberto_DblClick()
+ShowWindow CLng(Right$(lstStreamAberto.SelectedItem.Key, Len(lstStreamAberto.SelectedItem.Key) - 1)), SW_RESTORE 'função api para restaurar janela
+End Sub
+
+Private Sub pause1_Click()
+Call pauseFile(stream1)
+End Sub
+
+Private Sub pause2_Click()
+Call pauseFile(stream2)
+End Sub
+
+Private Sub play1_Click()
+Call PlayFile(stream1)
+tocadaslist.AddItem (Now & "-" & infomp1.Caption)
+End Sub
+
+Private Sub play2_Click()
+Call PlayFile(stream2)
+tocadaslist.AddItem (Now & "-" & infomp2.Caption)
+End Sub
+
+Private Sub player1_Click()
+If playlistView.ListItems.Count > 0 Then
+    Call openFile(1, playlist(playlistView.SelectedItem.index).path & "\" & playlist(playlistView.SelectedItem.index).nome, playlist(playlistView.SelectedItem.index).nome, stream1, stream1info, LabelDuracao1, infomp1, LabelPosition1, labelRest1, lblled1)
+    Call SetCrossPt(stream1, crosspoint1)
+    If Not BASS_ChannelIsActive(stream1) = BASS_ACTIVE_PLAYING Then Call apagar(playlistView.SelectedItem.index, playlist, tamanhobloco, playlistView)
+If autoload.value = 1 And Not BASS_ChannelIsActive(stream1) = BASS_ACTIVE_PLAYING Then
+    PlayFile (stream1)
+    tocadaslist.AddItem (Now & "-" & infomp1.Caption)
+End If
+End If
+End Sub
+
+Private Sub player2_Click()
+If playlistView.ListItems.Count > 0 Then
+    Call openFile(1, playlist(playlistView.SelectedItem.index).path & "\" & playlist(playlistView.SelectedItem.index).nome, playlist(playlistView.SelectedItem.index).nome, stream2, stream2info, Labelduracao2, infomp2, LabelPosition2, labelRest2, lblled2)
+    Call SetCrossPt(stream2, crosspoint2)
+    If Not BASS_ChannelIsActive(stream2) = BASS_ACTIVE_PLAYING Then Call apagar(playlistView.SelectedItem.index, playlist, tamanhobloco, playlistView)
+    If autoload.value = 1 And Not BASS_ChannelIsActive(stream2) = BASS_ACTIVE_PLAYING Then
+        PlayFile (stream2)
+        tocadaslist.AddItem (Now & "-" & infomp2.Caption)
+    End If
+End If
+End Sub
+Private Sub playlistView_KeyUp(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyDelete Then Call apagar(playlistView.SelectedItem.index, playlist, tamanhobloco, playlistView)
+If KeyCode = vbKey1 Then Call player1_Click
+If KeyCode = vbKey2 Then Call player2_Click
+End Sub
+
+Private Sub reopenAvisos_Click()
+Call abrirAvisos(listaAvisos, initdata(1))
+End Sub
+
+Private Sub ScrollVol1_Change()
+Call setVolume(stream1, ScrollVol1.value)
+End Sub
+
+Private Sub ScrollVol1_Scroll()
+Call setVolume(stream1, ScrollVol1.value)
+End Sub
+
+Private Sub ScrollVol2_Change()
+Call setVolume(stream2, ScrollVol2.value)
+End Sub
+
+Private Sub ScrollVol2_Scroll()
+Call setVolume(stream2, ScrollVol2.value)
+End Sub
+
+Private Sub stop1_Click()
+Call stopFile(stream1)
+End Sub
+
+Private Sub stop2_Click()
+Call stopFile(stream2)
+End Sub
+
+Private Sub streamEspelho_Click()
+    Dim item2 As audioItem
+    Dim stream As Form3
+    Set stream = New Form3
+    item2.nome = Espelho.SelectedItem.Text
+    item2.path = Left$(Espelho.SelectedItem.Key, Len(Espelho.SelectedItem.Key) - (Len(Espelho.SelectedItem.Text) + 1))
+    Call setInfoEvent(item2) 'função para diponibilizar o nome do arquivo a ser aberto para form3
+    stream.Show , Me
+    handle = "S" & LTrim$(Str(stream.hWnd))
+    lstStreamAberto.ListItems.Add , handle, item2.nome
+End Sub
+
+Private Sub streamPrev_Click()
+    If FilePrincipal.filename <> vbNullString Then
+    Dim item As audioItem
+    Dim stream As Form3
+    Set stream = New Form3
+    For X = 0 To FilePrincipal.ListCount
+        If FilePrincipal.Selected(X) Then
+        item.nome = FilePrincipal.List(X)
+        Exit For
+        End If
+    Next X
+    item.path = FilePrincipal.path
+    Call setInfoEvent(item) 'função para diponibilizar o nome do arquivo a ser aberto para form3
+    stream.Show , Me
+    handle = "S" & LTrim$(Str(stream.hWnd))
+    lstStreamAberto.ListItems.Add , handle, item.nome
+    End If
+End Sub
+
+Private Sub TimerFade1_Timer()
+If BASS_ChannelIsActive(stream1) = BASS_ACTIVE_PLAYING Then
+    If ScrollVol1.value = 0 Then
+        Call stopFile(stream1)
+        TimerFade1.Enabled = False
+        ScrollVol1.value = 10
+        Exit Sub
+    Else
+        ScrollVol1.value = ScrollVol1.value - 1
+        Call setVolume(stream1, ScrollVol1.value)
+    End If
+Else
+    TimerFade1.Enabled = False
+    ScrollVol1.value = 10
+End If
+End Sub
+
+Private Sub TimerFade2_Timer()
+If BASS_ChannelIsActive(stream2) = BASS_ACTIVE_PLAYING Then
+    If ScrollVol2.value = 0 Then
+        Call stopFile(stream2)
+        TimerFade2.Enabled = False
+        ScrollVol2.value = 10
+        Exit Sub
+    Else
+        ScrollVol2.value = ScrollVol2.value - 1
+        Call setVolume(stream2, ScrollVol2.value)
+    End If
+Else
+    TimerFade2.Enabled = False
+    ScrollVol2.value = 10
+End If
+End Sub
+
+Private Sub trasfermulti_Click()
+If FilePrincipal.filename <> vbNullString Then
+Dim pos As Integer
+If playlistView.ListItems.Count > 0 Then pos = playlistView.SelectedItem.index + 1 Else pos = 1
+For X = 0 To (FilePrincipal.ListCount - 1)
+  If FilePrincipal.Selected(X) Then
+    Call toPlaylist(pos, 0, FilePrincipal.path, FilePrincipal.List(X), playlist, tamanhobloco, playlistView)
+    pos = pos + 1
+  End If
+  DoEvents 'para carregar dinamicamente
+Next X
+End If
+End Sub
+
+Private Sub uplist_Click()
+On Error GoTo error
+If playlistView.ListItems.Count > 1 Then
+    If playlistView.SelectedItem.index > 1 Then
+        permutaVetor playlistView.SelectedItem.index, 0, playlist
+        itemdeapoio(0) = playlistView.ListItems(playlistView.SelectedItem.index - 1).Text
+        itemdeapoio(1) = playlistView.ListItems(playlistView.SelectedItem.index - 1).Key
+        playlistView.ListItems.Remove (playlistView.SelectedItem.index - 1)
+        playlistView.ListItems.Add playlistView.SelectedItem.index + 1, itemdeapoio(1), itemdeapoio(0)
+    End If
+End If
+Exit Sub
+error:
+End Sub
+
+'************************************************VINHETAS********************
+Private Sub vinheta1_Click(index As Integer)
+If vinheta1(index).Caption = "vazio" Then
+    dialogo1.Filter = "arquivos mp3 e wav (*.mp3,*.wav)|*.mp3;*.wav"
+    dialogo1.flags = &H1000
+    dialogo1.filename = vbNullString
+    dialogo1.ShowOpen
+    If dialogo1.filename = vbNullString Then Exit Sub
+    vinhetas(index).nome = dialogo1.FileTitle
+    vinhetas(index).caminho = dialogo1.filename
+    Call openFile(1, vinhetas(index).caminho, vinhetas(index).nome, vinhetas(index).id, vinhetas(index).info, lblVinInfo(index), vinheta1(index))
+Else
+    If BASS_ChannelIsActive(vinhetas(index).id) = BASS_ACTIVE_PLAYING Then
+        stopFile (vinhetas(index).id)
+    Else
+        PlayFile (vinhetas(index).id)
+    End If
+End If
+End Sub
+'***************************************************************************'
+Private Sub tmrSpectrum_Timer()
+    Call UpdateSpectrum(0, 0, 0, 0, 0, stream1) ' the params are if using the API MM timer
+    Call UpdateSpectrum(0, 0, 0, 0, 0, stream2) ' the params are if using the API MM timer
+End Sub
+
+Private Sub vinheta1_MouseUp(index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
+ If Button = 2 Then
+    vinhetaIndex = index
+    PopupMenu popupVinhetas
+ End If
+End Sub
+
+Private Sub vuMeter_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
+    specmode = (specmode + 1) Mod 4  ' swap spectrum mode
+    ReDim specbuf(SPECWIDTH * (SPECHEIGHT + 1)) As Byte ' clear display
+End Sub
+
+Private Sub TimerProgressao_Timer()
+Call updateTimes(stream1, LabelPosition1, labelRest1, LabelMode1, lblled1)
+Call updateTimes(stream2, LabelPosition2, labelRest2, LabelMode2, lblled2)
+For cont = 0 To 59
+    Call updateTimes(vinhetas(cont).id, , lblVinInfo(cont), , lblVinInfo(cont))
+    DoEvents
+Next cont
+End Sub
+
+Private Sub TimerEventos_Timer()
+lblhora.Caption = Now
+Call verifyAdv(time, listaComercial, playlist, tamanhobloco)
+Call verifAvisos(time, listaAvisos)
+ecadcounter = ecadcounter + 1
+Call salvaLog(ecadcounter)
+End Sub
+Private Sub timerAutocross_Timer()
+If playlistView.ListItems.Count > 0 Then
+    If playlist(1).nome = "PAUSA" Then
+    autocross.value = 0
+    timerAutocross.Enabled = False
+    Exit Sub
+    End If
+    If isAutocross(stream1, crosspoint1) Then
+        Call closeFile(stream2)
+        Call openFile(1, playlist(1).path & "\" & playlist(1).nome, playlist(1).nome, stream2, stream2info, Labelduracao2, infomp2, LabelPosition2, labelRest2, lblled2)
+        Call SetCrossPt(stream2, crosspoint2)
+        Call PlayFile(stream2)
+        tocadaslist.AddItem (Now & "-" & infomp2.Caption)
+        lblexecutando.Caption = "EXECUTANDO: " & playlist(1).nome
+        Call apagar(1, playlist, tamanhobloco, playlistView)
+        If playlistView.ListItems.Count > 0 Then lblproximo.Caption = "PRÓXIMO: " & playlist(1).nome
+    ElseIf isAutocross(stream2, crosspoint2) Then
+        Call closeFile(stream1)
+        Call openFile(1, playlist(1).path & "\" & playlist(1).nome, playlist(1).nome, stream1, stream1info, LabelDuracao1, infomp1, LabelPosition1, labelRest1, lblled1)
+        Call SetCrossPt(stream1, crosspoint1)
+        Call PlayFile(stream1)
+        tocadaslist.AddItem (Now & "-" & infomp1.Caption)
+        lblexecutando.Caption = "EXECUTANDO: " & playlist(1).nome
+        Call apagar(1, playlist, tamanhobloco, playlistView)
+        If playlistView.ListItems.Count > 0 Then lblproximo.Caption = "PRÓXIMO: " & playlist(1).nome
+    End If
+End If
+End Sub
+'---------------------------------------------------I/O---------------------------------------------------
+Private Sub salvarlista_Click()
+If playlistView.ListItems.Count > 0 Then
+    dialogo1.Filter = "lista de músicas (*.lst)|*.lst"
+    dialogo1.DefaultExt = "lst"
+    dialogo1.flags = &H2
+    dialogo1.ShowSave
+    If Not (dialogo1.filename Like vbNullString) Then
+        Call savefileList(dialogo1.filename, playlist)
+    End If
+End If
+End Sub
+
+Private Sub abrirlista_Click()
+dialogo1.Filter = "lista de músicas (*.lst)|*.lst"
+dialogo1.DefaultExt = "lst"
+dialogo1.flags = &H2
+dialogo1.ShowOpen
+If Not (dialogo1.filename Like vbNullString) Then
+    If playlistView.ListItems.Count > 0 Then
+        playlistView.ListItems.Clear
+    End If
+        Call openfileList(dialogo1.filename, playlist)
+End If
+End Sub
+'******************************************************other**************************************************
+Private Sub autocross_Click()
+If autocross.value = 0 Then
+    timerAutocross.Enabled = False
+    autocross.BackColor = &HFF&
+Else
+    timerAutocross.Enabled = True
+    autocross.BackColor = &HFF00&
+    lblLembretes.Caption = "autocross habilitado"
+End If
+End Sub
+
+Private Sub autoload_Click()
+If autoload.value = 0 Then
+    autoload.BackColor = &HFF&
+Else
+    autoload.BackColor = &HFF00&
+End If
+End Sub
+

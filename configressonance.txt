@@ -1,0 +1,19 @@
+Configuração ressonance. Edite as mascaras da forma que desejar mudando o texto das tralhas
+
+Avisos
+#C:\ressonance\aviso.txt
+
+Espelho
+#C:\ressonance\espelho.txt
+
+Comerciais
+#C:\ressonance\comercial.lsc
+
+vinhetas rotativas
+#C:\ressonance\rotativas.txt
+
+sintaxe:
+avisos: texto/hora
+espelho: diretorio+arquivo/nome
+comerciais:diretorio/dia/hora
+rotativas:diretorios (até 6)
