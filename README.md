@@ -12,4 +12,5 @@ Ressonance is a radio automation system. It means that it was used to manage all
 <h1>How to use</h1>
 Copy the dll files to the c:\windows\system folder and execute
 
+<h1>Screenshot</h1>
 <img src="http://casadasfestasjf.com/others/imagem2.jpg" width=500></img>
