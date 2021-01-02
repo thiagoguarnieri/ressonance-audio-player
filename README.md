@@ -13,7 +13,7 @@ Ressonance is a radio automation system. It means that it was used to manage all
 Copy the dll files to the c:\windows\system folder and execute
 
 <br />
-*Compatible with Windows 7 in compatibility mode.
+*Compatible with Windows 7 and above in compatibility mode.
 
-<h1>Screenshot</h1>
-<img src="http://casadasfestasjf.com/figuras_variadas/ressonance.png" width=500></img>
+<!--<h1>Screenshot</h1>
+<img src="http://casadasfestasjf.com/figuras_variadas/ressonance.png" width=500></img>-->
