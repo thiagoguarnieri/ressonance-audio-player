@@ -16,4 +16,4 @@ Copy the dll files to the c:\windows\system folder and execute
 *Compatible with Windows 7 and above in compatibility mode.
 
 <h1>Screenshot</h1>
-<img src="https://drive.google.com/file/d/1jPYYxIFnSRYP0P-21JvDQP2DHb7eie_A/view?usp=sharing" width=500></img>
+<img src="https://drive.google.com/uc?id=1jPYYxIFnSRYP0P-21JvDQP2DHb7eie_A" width=500></img>
